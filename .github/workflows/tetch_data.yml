@@ -1,0 +1,58 @@
+name: Fetch LCSC Data
+
+on:
+  watch:
+    types: [started]
+  workflow_dispatch:
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install aiohttp tqdm
+      
+      - name: Run fetch script
+        env:
+          LCSC_COOKIE: ${{ secrets.LCSC_COOKIE }}
+          VOYAGE_UUID: ${{ secrets.VOYAGE_UUID }}
+        run: |
+          python sea_patrol_project.py
+      
+      - name: Check if file generated
+        run: |
+          if [ ! -f "sea_patrol_project.json" ]; then
+            echo "JSON 文件未生成"
+            exit 1
+          fi
+          echo "文件已生成，大小: $(du -h sea_patrol_project.json | cut -f1)"
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      
+      - name: Commit and push changes
+        run: |
+          git add sea_patrol_project.json
+          # 只在文件有变更时才提交
+          if git diff --staged --quiet; then
+            echo "数据未变更，无需提交"
+          else
+            git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+            echo "数据已更新到仓库"
+          fi
