@@ -1606,8 +1606,8 @@
     "productPrice": 0.0079
   },
   "0603WAF1001T5E": {
-    "freeQty": 0,
-    "minTotal": 0.88,
+    "freeQty": 50,
+    "minTotal": 0.44,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
@@ -1903,8 +1903,8 @@
     "productPrice": 0.0055
   },
   "0805W8F220JT5E": {
-    "freeQty": 0,
-    "minTotal": 1.46,
+    "freeQty": 50,
+    "minTotal": 0.73,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
