@@ -94,7 +94,7 @@
         modal.innerHTML = `
             <div class="spprj-modal-overlay">
                 <div class="spprj-modal-content">
-                    <h3>⚙️ 设置数据源</h3>
+                    <h3>设置数据源</h3>
                     <div class="spprj-form-group">
                         <label>数据 URL：</label>
                         <input type="text" id="spprj-url-input" value="${currentUrl}" placeholder="https://example.com/data.json">
@@ -165,6 +165,14 @@
             if (highlighter) highlighter.rescan();
         } catch (e) {
             alert('获取失败: ' + e.message);
+        }
+    });
+    GM_registerMenuCommand('清理缓存', async () => {
+        try {
+            GM_setValue(STORAGE_KEY_URL, undefined);
+            alert('缓存已清除');
+        } catch (e) {
+            alert('清理失败: ' + e.message);
         }
     });
 
