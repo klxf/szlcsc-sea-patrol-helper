@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      1.3
-// @description  在搜索结果与详情页中标记大航海计划内的器件（支持自定义数据源）
+// @version      1.3.1
+// @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
 // @match        https://list.szlcsc.com/*
@@ -13,6 +13,7 @@
 // @grant        GM_getValue
 // @grant        GM_xmlhttpRequest
 // @run-at       document-idle
+// @license      Apache-2.0
 // ==/UserScript==
 
 (function() {
@@ -169,7 +170,7 @@
     });
     GM_registerMenuCommand('清理缓存', async () => {
         try {
-            GM_setValue(STORAGE_KEY_URL, undefined);
+            GM_setValue(COMPONENT_DATA, undefined);
             alert('缓存已清除');
         } catch (e) {
             alert('清理失败: ' + e.message);
