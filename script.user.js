@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      1.3.1
+// @version      1.4.0
 // @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
@@ -33,6 +33,7 @@
     let highlighter = null;
 
     const TARGET_SELECTOR = 'div div section div div div:nth-child(2) dl dd';
+    const PRODUCT_CODE_SELECTOR = 'div div section div div div:nth-child(2) dl:nth-child(5) dd';
 
     const SVG = `<svg t="1774202466413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1796" width="256" height="256"><path d="M512 0a512 512 0 0 0 0 1024c122.148571 0 234.203429-42.934857 322.267429-114.322286l56.905142-54.491428A509.513143 509.513143 0 0 0 1024 512a512 512 0 0 0-512-512zM390.290286 173.494857s42.496-42.496 127.488-42.496c84.918857 0 127.414857 42.422857 127.414857 42.422857v127.488s-21.211429-10.605714-63.707429-16.822857v-58.88s0-31.817143-63.707428-31.817143c-63.780571 0-63.780571 31.817143-63.780572 31.817143v58.88c-42.422857 6.217143-63.634286 16.822857-63.634285 16.822857V173.494857zM305.371429 343.332571l212.406857-42.422857 212.333714 42.422857 21.211429 106.203429-233.545143-63.634286-233.618286 63.634286 21.211429-106.203429z m466.285714 148.699429V640.731429s-21.211429 42.422857-84.992 42.422857c-57.782857 0-80.603429-52.370286-147.675429-62.171429V433.956571l232.594286 58.148572z m-509.805714 0l234.642285-58.660571v187.392c-68.608 8.996571-91.355429 62.390857-149.650285 62.390857-63.707429 0-84.918857-42.422857-84.918858-42.422857V492.032z m553.252571 276.114286s-63.707429 42.422857-127.414857 42.422857-84.992-63.634286-169.910857-63.634286c-84.992 0-84.992 63.634286-169.910857 63.634286-84.992 0-127.488-42.422857-127.488-42.422857s-42.422857-21.211429-42.422858-63.707429c0-47.908571 63.634286-21.211429 63.634286-21.211428s21.284571 42.422857 106.276572 42.422857c84.918857 0 84.918857-63.707429 169.910857-63.707429 84.918857 0 84.918857 63.707429 169.910857 63.707429 84.918857 0 106.203429-42.422857 106.203428-42.422857s63.634286-26.331429 63.634286 21.211428c0 42.422857-42.422857 63.634286-42.422857 63.634286z" fill="#33A0FE" p-id="1797"></path></svg>`;
 
@@ -353,15 +354,43 @@
 
             dds.forEach(dd => {
                 if (dd._lcscMatched) return;
+
+                const productCodeDD = this._getProductCodeDD(dd);
+                const productCodeText = productCodeDD ? productCodeDD.textContent.toUpperCase() : null;
+
                 const text = this.extractor.extractFromDD(dd);
                 if (!text) return;
 
                 const match = this.matcher.findMatch(text);
                 if (match) {
-                    this.mark(dd, match);
+                    const dbProductCode = match.data.productCode;
+                    if (dbProductCode && productCodeText) {
+                        if (productCodeText === dbProductCode) {
+                            log('型号和 productCode 同时匹配:', text, productCodeText);
+                            this.mark(dd, match);
+                        } else {
+                            log('型号匹配但 productCode 不匹配:', text, 'db:', dbProductCode, 'page:', productCodeText);
+                        }
+                    } else if (!dbProductCode) {
+                        log('仅型号匹配（无 productCode）:', text);
+                        this.mark(dd, match);
+                    } else {
+                        log('需要 productCode 但未找到对应元素:', text);
+                    }
                 }
                 dd._lcscChecked = true;
             });
+        }
+
+        _getProductCodeDD(targetDD) {
+            // 从目标 dd 向上找到 section，然后查找 dl:nth-child(5) dd
+            const section = targetDD.closest('section');
+            if (!section) return null;
+
+            const productCodeDL = section.querySelector('div div:nth-child(2) dl:nth-child(5)');
+            if (!productCodeDL) return null;
+
+            return productCodeDL.querySelector('dd');
         }
 
         mark(dd, { key, data }) {
@@ -423,9 +452,15 @@
             const rawText = h1.textContent || '';
             const cleanText = rawText.trim().toUpperCase().replace(/\s+/g, '');
 
+            let productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(4) dd")[0].textContent;
+            if (!(/^C\d+$/.test(productCode))) {
+                productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(3) dd")[0].textContent;
+            }
+            const dbProductCode = COMPONENT_DATA[cleanText]?.productCode;
+
             log('H1 文本:', rawText, '清理后:', cleanText);
 
-            if (COMPONENT_DATA[cleanText]) {
+            if (COMPONENT_DATA[cleanText] && productCode === dbProductCode) {
                 if (h1.querySelector('.spprj-sailor-icon')) return true;
 
                 const data = COMPONENT_DATA[cleanText];
