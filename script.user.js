@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      2.1.0
+// @version      2.1.1
 // @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
@@ -654,12 +654,20 @@
                         e.stopPropagation();
                         const list = loadPrepareList();
                         const idx = list.findIndex(item => item.cid === productCode);
+                        let minQty = parseInt(document.querySelectorAll('div div:nth-child(2) section div:nth-child(7) span')[0].textContent.replaceAll(' ', '').match(/\d+/)[0], 10);
+                        if (isSeaPatrol && COMPONENT_DATA[cleanText]?.freeQty > 0 && minQty < COMPONENT_DATA[cleanText].freeQty) {
+                            minQty = COMPONENT_DATA[cleanText].freeQty;
+                        }
                         if (idx >= 0) {
-                            list[idx].qty = 1;
-                            alert(`${productCode} 已存在于预备料列表，数量已重置为 1`);
+                            list[idx].qty += minQty;
+                            if (isSeaPatrol && list[idx].qty > COMPONENT_DATA[cleanText]?.freeQty) {
+                                alert(`${productCode} 为已存在于预备料列表的大航海计划器件，数量增加 ${minQty} 个，已超出免费范围（${COMPONENT_DATA[cleanText].freeQty}）`);
+                            } else {
+                                alert(`${productCode} 已存在于预备料列表，数量增加 ${minQty} 个`);
+                            }
                         } else {
-                            list.push({ cid: productCode, qty: 1 });
-                            alert(`已将 ${productCode} 加入预备料列表`);
+                            list.push({ cid: productCode, qty: minQty });
+                            alert(`已将 ${minQty} 个 ${productCode} 加入预备料列表`);
                         }
                         savePrepareList(list);
                     });
