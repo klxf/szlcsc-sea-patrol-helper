@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      1.4.0
+// @version      2.0.0
 // @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
 // @match        https://list.szlcsc.com/*
 // @match        https://item.szlcsc.com/*
+// @match        https://activity.szlcsc.com/sea_patrol_project.html*
 // @grant        GM_addStyle
 // @grant        GM_registerMenuCommand
 // @grant        GM_setValue
@@ -27,6 +28,7 @@
     const DEFAULT_URL = 'https://raw.githubusercontent.com/klxf/szlcsc-sea-patrol-helper/refs/heads/master/sea_patrol_project.json';
     const STORAGE_KEY_DATA = 'szlcsc_sp_data';
     const STORAGE_KEY_URL = 'szlcsc_sp_url';
+    const STORAGE_KEY_PREPARE = 'szlcsc_sp_prepare';
 
     let COMPONENT_DATA = {};
     let matcher = null;
@@ -35,7 +37,7 @@
     const TARGET_SELECTOR = 'div div section div div div:nth-child(2) dl dd';
     const PRODUCT_CODE_SELECTOR = 'div div section div div div:nth-child(2) dl:nth-child(5) dd';
 
-    const SVG = `<svg t="1774202466413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1796" width="256" height="256"><path d="M512 0a512 512 0 0 0 0 1024c122.148571 0 234.203429-42.934857 322.267429-114.322286l56.905142-54.491428A509.513143 509.513143 0 0 0 1024 512a512 512 0 0 0-512-512zM390.290286 173.494857s42.496-42.496 127.488-42.496c84.918857 0 127.414857 42.422857 127.414857 42.422857v127.488s-21.211429-10.605714-63.707429-16.822857v-58.88s0-31.817143-63.707428-31.817143c-63.780571 0-63.780571 31.817143-63.780572 31.817143v58.88c-42.422857 6.217143-63.634286 16.822857-63.634285 16.822857V173.494857zM305.371429 343.332571l212.406857-42.422857 212.333714 42.422857 21.211429 106.203429-233.545143-63.634286-233.618286 63.634286 21.211429-106.203429z m466.285714 148.699429V640.731429s-21.211429 42.422857-84.992 42.422857c-57.782857 0-80.603429-52.370286-147.675429-62.171429V433.956571l232.594286 58.148572z m-509.805714 0l234.642285-58.660571v187.392c-68.608 8.996571-91.355429 62.390857-149.650285 62.390857-63.707429 0-84.918857-42.422857-84.918858-42.422857V492.032z m553.252571 276.114286s-63.707429 42.422857-127.414857 42.422857-84.992-63.634286-169.910857-63.634286c-84.992 0-84.992 63.634286-169.910857 63.634286-84.992 0-127.488-42.422857-127.488-42.422857s-42.422857-21.211429-42.422858-63.707429c0-47.908571 63.634286-21.211429 63.634286-21.211428s21.284571 42.422857 106.276572 42.422857c84.918857 0 84.918857-63.707429 169.910857-63.707429 84.918857 0 84.918857 63.707429 169.910857 63.707429 84.918857 0 106.203429-42.422857 106.203428-42.422857s63.634286-26.331429 63.634286 21.211428c0 42.422857-42.422857 63.634286-42.422857 63.634286z" fill="#33A0FE" p-id="1797"></path></svg>`;
+    const LOGO = "https://static.szlcsc.com/ecp/assets/web/page/order/orderManage/images/big-sea.svg";
 
     function loadStoredData() {
         const saved = GM_getValue(STORAGE_KEY_DATA, null);
@@ -83,6 +85,14 @@
                 }
             });
         });
+    }
+
+    function loadPrepareList() {
+        return GM_getValue(STORAGE_KEY_PREPARE, []);
+    }
+
+    function savePrepareList(list) {
+        GM_setValue(STORAGE_KEY_PREPARE, list);
     }
 
     function openSettings() {
@@ -158,6 +168,157 @@
         };
     }
 
+    function openPrepareManager() {
+        const existing = document.getElementById('spprj-prepare-modal');
+        if (existing) existing.remove();
+
+        const list = loadPrepareList();
+        const modal = document.createElement('div');
+        modal.id = 'spprj-prepare-modal';
+
+        let rowsHtml = '';
+        if (list.length === 0) {
+            rowsHtml = '<tr><td colspan="3" style="text-align:center;color:#999;padding:20px;">预备料列表为空</td></tr>';
+        } else {
+            list.forEach((item, index) => {
+                rowsHtml += `
+                    <tr data-index="${index}">
+                        <td style="padding:8px;border-bottom:1px solid #eee;">${item.cid}</td>
+                        <td style="padding:8px;border-bottom:1px solid #eee;">
+                            <input type="number" class="spprj-prepare-qty" data-index="${index}" value="${item.qty}" style="width:60px;padding:4px;border:1px solid #ddd;border-radius:4px;">
+                        </td>
+                        <td style="padding:8px;border-bottom:1px solid #eee;text-align:center;">
+                            <button class="spprj-btn-delete" data-index="${index}" style="background:#ff4444;color:white;border:none;padding:4px 10px;border-radius:4px;cursor:pointer;">删除</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        modal.innerHTML = `
+            <div class="spprj-modal-overlay">
+                <div class="spprj-modal-content" style="max-width:600px;">
+                    <h3>管理大航海预备料</h3>
+                    <div style="max-height:400px;overflow-y:auto;margin:15px 0;">
+                        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+                            <thead>
+                                <tr style="background:#f5f5f5;">
+                                    <th style="padding:10px;text-align:left;border-bottom:2px solid #ddd;">CID</th>
+                                    <th style="padding:10px;text-align:left;border-bottom:2px solid #ddd;">数量</th>
+                                    <th style="padding:10px;text-align:center;border-bottom:2px solid #ddd;">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>${rowsHtml}</tbody>
+                        </table>
+                    </div>
+                    <div class="spprj-modal-buttons">
+                        <button id="spprj-btn-clear" class="spprj-btn-primary">清空</button>
+                        <button id="spprj-btn-close" class="spprj-btn-secondary">关闭</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        document.getElementById('spprj-btn-close').onclick = () => modal.remove();
+
+        document.getElementById('spprj-btn-clear').onclick = () => {
+            if (confirm('确定要清空预备料列表吗？')) {
+                savePrepareList([]);
+                openPrepareManager();
+            }
+        };
+
+        modal.querySelectorAll('.spprj-prepare-qty').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const idx = parseInt(e.target.dataset.index, 10);
+                const newQty = parseInt(e.target.value, 10);
+                const currentList = loadPrepareList();
+                if (currentList[idx]) {
+                    if (isNaN(newQty) || newQty <= 0) {
+                        alert('请输入有效的数量');
+                        e.target.value = currentList[idx].qty;
+                        return;
+                    }
+                    currentList[idx].qty = newQty;
+                    savePrepareList(currentList);
+                }
+            });
+        });
+
+        modal.querySelectorAll('.spprj-btn-delete').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const idx = parseInt(e.target.dataset.index, 10);
+                const currentList = loadPrepareList();
+                currentList.splice(idx, 1);
+                savePrepareList(currentList);
+                openPrepareManager();
+            });
+        });
+
+        modal.querySelector('.spprj-modal-overlay').onclick = (e) => {
+            if (e.target === modal.querySelector('.spprj-modal-overlay')) {
+                modal.remove();
+            }
+        };
+    }
+
+    function initPrepareButton() {
+        if (!location.href.includes('activity.szlcsc.com/sea_patrol_project.html')) return;
+        if (document.getElementById('spprj-prepare-float-btn')) return;
+
+        const btn = document.createElement('button');
+        btn.id = 'spprj-prepare-float-btn';
+        btn.className = 'spprj-prepare-float-btn';
+        btn.textContent = '一键备料';
+        document.body.appendChild(btn);
+
+        btn.addEventListener('click', async () => {
+            const uuid = new URLSearchParams(location.search).get('uuid');
+            if (!uuid) {
+                alert('无法获取项目 UUID，请确认 URL 包含 uuid 参数');
+                return;
+            }
+
+            const list = loadPrepareList();
+            if (list.length === 0) {
+                alert('预备料列表为空');
+                return;
+            }
+
+            const productList = list.map(item => ({
+                productCode: item.cid,
+                purchaseNum: item.qty || 1
+            }));
+
+            try {
+                const response = await fetch("https://activity.szlcsc.com/itp/voyage/async/pending/product/save", {
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        voyageCustomerProjectUuid: uuid,
+                        productList: productList,
+                        addType: "add"
+                    }),
+                    method: "POST",
+                    mode: "cors",
+                    credentials: "include"
+                });
+
+                const result = await response.json();
+                if (response.ok && (result.code === 200 || result.success === true)) {
+                    alert('备料成功！共提交 ' + productList.length + ' 个物料');
+                } else {
+                    alert('备料失败：' + (result.message || result.msg || JSON.stringify(result)));
+                }
+            } catch (e) {
+                alert('备料请求失败：' + e.message);
+            }
+        });
+    }
+
     GM_registerMenuCommand('设置数据源', openSettings);
     GM_registerMenuCommand('更新数据', async () => {
         const url = GM_getValue(STORAGE_KEY_URL, DEFAULT_URL);
@@ -169,9 +330,10 @@
             alert('获取失败: ' + e.message);
         }
     });
+    GM_registerMenuCommand('管理预备料', openPrepareManager);
     GM_registerMenuCommand('清理缓存', async () => {
         try {
-            GM_setValue(COMPONENT_DATA, undefined);
+            GM_setValue(STORAGE_KEY_DATA, undefined);
             alert('缓存已清除');
         } catch (e) {
             alert('清理失败: ' + e.message);
@@ -447,40 +609,68 @@
 
         const tryProcess = () => {
             const h1 = document.querySelector('h1');
-            if (!h1) return false;
+            const addCartBtn = document.getElementById('addCartBtn-product');
+
+            if (!h1 || !addCartBtn) return false;
 
             const rawText = h1.textContent || '';
             const cleanText = rawText.trim().toUpperCase().replace(/\s+/g, '');
 
-            let productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(4) dd")[0].textContent;
-            if (!(/^C\d+$/.test(productCode))) {
-                productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(3) dd")[0].textContent;
+            let productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(4) dd")[0]?.textContent;
+            if (!productCode || !(/^C\d+$/.test(productCode))) {
+                const alt = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(3) dd")[0];
+                productCode = alt ? alt.textContent : null;
             }
+
+            if (!productCode) return false;
+
             const dbProductCode = COMPONENT_DATA[cleanText]?.productCode;
 
             log('H1 文本:', rawText, '清理后:', cleanText);
 
             if (COMPONENT_DATA[cleanText] && productCode === dbProductCode) {
-                if (h1.querySelector('.spprj-sailor-icon')) return true;
+                if (h1.querySelector('.spprj-sailor-icon') && document.getElementById('addCartBtn-seaPatrol')) {
+                    return true;
+                }
 
                 const data = COMPONENT_DATA[cleanText];
-                const svgWrapper = document.createElement('span');
-                svgWrapper.innerHTML = SVG;
-                const svg = svgWrapper.querySelector('svg');
 
-                svg.style.height = '27px';
-                svg.style.width = 'auto';
-                svg.style.verticalAlign = 'middle';
-                svg.style.marginLeft = '8px';
-                svg.style.display = 'inline-block';
-                svg.style.cursor = 'help';
+                if (!h1.querySelector('.spprj-sailor-icon')) {
+                    const logoWrapper = document.createElement('span');
+                    const altText = `大航海计划: \n免费数量 ${data.freeQty} 个 \n起订需付 ¥${data.minTotal}`;
+                    logoWrapper.innerHTML = `<img alt= "大航海计划" title="${altText}" width="61" height="24" class="ml-[6px]" src="${LOGO}" style="color: transparent;">`;
+                    h1.after(logoWrapper);
+                    log('已添加大航海标识:', cleanText);
+                }
 
-                const svgTitle = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-                svgTitle.textContent = `大航海计划: 免费数量 ${data.freeQty} 个，起订需付 ¥${data.minTotal}`;
-                svg.prepend(svgTitle);
+                if (!document.getElementById('addCartBtn-seaPatrol')) {
+                    const targetContainer = addCartBtn.parentElement?.parentElement;
+                    if (targetContainer) {
+                        const seaBtn = document.createElement('button');
+                        seaBtn.id = 'addCartBtn-seaPatrol';
+                        seaBtn.className = 'mt-[10px] flex w-full items-center justify-center h-[48px] border-[#ABB5C9] hover:text-[rgba(57,74,111,0.8)] border-[1px] bg-[#F6F7F9] rounded-[30px] text-[16px] leading-[48px] text-[#394A6F]';
+                        seaBtn.textContent = '大航海预备料';
 
-                h1.after(svg);
-                log('已添加大航海标识:', cleanText);
+                        seaBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            const list = loadPrepareList();
+                            const idx = list.findIndex(item => item.cid === productCode);
+                            if (idx >= 0) {
+                                list[idx].qty = 1;
+                                alert(`${productCode} 已存在于预备料列表，数量已重置为 1`);
+                            } else {
+                                list.push({ cid: productCode, qty: 1 });
+                                alert(`已将 ${productCode} 加入预备料列表`);
+                            }
+                            savePrepareList(list);
+                        });
+
+                        targetContainer.appendChild(seaBtn);
+                        log('已添加预备料按钮:', cleanText);
+                    }
+                }
+
                 return true;
             } else {
                 log('未匹配:', cleanText);
@@ -545,8 +735,8 @@
         .spprj-tip-row { display: flex; justify-content: space-between; margin: 4px 0; color: #ccc; font-size: 12px; }
         .spprj-tip-val { color: #4ade80; font-weight: 600; margin-left: 10px; }
 
-        /* 设置弹窗样式 */
-        #spprj-settings-modal .spprj-modal-overlay {
+        #spprj-settings-modal .spprj-modal-overlay,
+        #spprj-prepare-modal .spprj-modal-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0,0,0,0.5);
@@ -555,7 +745,8 @@
             align-items: center;
             justify-content: center;
         }
-        #spprj-settings-modal .spprj-modal-content {
+        #spprj-settings-modal .spprj-modal-content,
+        #spprj-prepare-modal .spprj-modal-content {
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -564,7 +755,8 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
-        #spprj-settings-modal h3 { margin: 0 0 15px 0; font-size: 18px; color: #333; }
+        #spprj-settings-modal h3,
+        #spprj-prepare-modal h3 { margin: 0 0 15px 0; font-size: 18px; color: #333; }
         .spprj-form-group { margin-bottom: 15px; }
         .spprj-form-group label { display: block; margin-bottom: 5px; font-size: 14px; color: #666; }
         .spprj-form-group input {
@@ -588,10 +780,28 @@
             font-size: 14px;
             transition: opacity 0.2s;
         }
-        .spprj-btn-primary { background: #ff4444; color: white; }
-        .spprj-btn-secondary { background: #e0e0e0; color: #333; }
+        .spprj-btn-primary { background: #3177F2; color: white; }
+        .spprj-btn-secondary { background: #EDF9FF; color: #0093e6; }
         .spprj-modal-buttons button:hover { opacity: 0.9; }
         .spprj-status { margin-top: 10px; font-size: 13px; min-height: 20px; }
+
+        .spprj-prepare-float-btn {
+            position: fixed;
+            bottom: 64px;
+            right: 0;
+            z-index: 999;
+            padding: 12px 28px;
+            background: #3177F2;
+            color: #fff;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            transition: all 0.2s ease;
+        }
+        .spprj-prepare-float-btn:hover { background: #014EFE; }
     `);
 
     async function init() {
@@ -602,6 +812,10 @@
             processItemPage();
         } else {
             highlighter = new Highlighter();
+        }
+
+        if (location.href.includes('activity.szlcsc.com/sea_patrol_project.html')) {
+            initPrepareButton();
         }
 
         if (!hasLocalData) {

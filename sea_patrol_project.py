@@ -20,6 +20,7 @@ API_URL = "https://activity.szlcsc.com/itp/voyage/so/async/product/search"
 PAGE_SIZE = 10
 CONCURRENCY = 3
 OUTPUT_JSON = "sea_patrol_project.json"
+OUTPUT_MARKDOWN = "LIST.md"
 
 USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -57,19 +58,19 @@ async def fetch_catalogs(session: aiohttp.ClientSession, uuid: str) -> List[Dict
         "searchType": "default",
         "voyageCustomerProjectUuid": uuid,
     }
-    
+
     try:
         async with session.post(API_URL, json=body, timeout=30) as resp:
             if resp.status != 200:
                 text = await resp.text()
                 raise RuntimeError(f"HTTP {resp.status}: {text[:200]}")
-            
+
             data = await resp.json()
             catalogs = data.get("result", {}).get("catalogGroup", [])
-            
+
             if not catalogs:
                 raise RuntimeError("API 返回的分类列表为空，请检查 Cookie 和 UUID 是否正确")
-            
+
             return catalogs
     except Exception as e:
         print(f"::error::获取分类列表失败: {e}")
@@ -92,7 +93,7 @@ async def fetch_page(
             "catalogIdFilter": catalog_id,
             "voyageCustomerProjectUuid": uuid,
         }
-        
+
         async with session.post(API_URL, json=body, timeout=30) as resp:
             if resp.status != 200:
                 text = await resp.text()
@@ -103,17 +104,17 @@ async def fetch_page(
 def parse_products(json_data: Dict[str, Any], category: str, data_map: Dict[str, Any]):
     """解析单页产品数据"""
     source_list = json_data.get("result", {}).get("sourceList", [])
-    
+
     for item in source_list:
         vo = item.get("frontProductVO") or {}
         model = vo.get("productModel")
-        
+
         if not model or str(model).lower() == 'nan':
             continue
-        
+
         free_qty = clean_number(vo.get("itpProductNum"), is_int=True)
         min_total = clean_number(vo.get("productMoney"), is_int=False)
-        
+
         data_map[str(model).strip()] = {
             "freeQty": free_qty,
             "minTotal": round(min_total, 2),
@@ -136,97 +137,173 @@ async def crawl_category(
     """抓取单个分类的所有页面"""
     data_map = {}
     semaphore = asyncio.Semaphore(CONCURRENCY)
-    
+
     try:
         # 第一页
         first_page = await fetch_page(session, catalog_id, 1, uuid, semaphore)
         total_pages = first_page.get("result", {}).get("countPage", 0)
-        
+
         if total_pages == 0:
             return data_map
-        
+
         parse_products(first_page, category_name, data_map)
-        
+
         # 剩余页面
         if total_pages > 1:
             pages = list(range(2, total_pages + 1))
             tasks = [fetch_page(session, catalog_id, p, uuid, semaphore) for p in pages]
-            
+
             results = await tqdm_asyncio.gather(
-                *tasks, 
-                desc=f"{category_name[:10]:<10}", 
+                *tasks,
+                desc=f"{category_name[:10]:<10}",
                 total=len(pages),
                 bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}]',
                 ncols=80
             )
-            
+
             for page_data in results:
                 parse_products(page_data, category_name, data_map)
-                
+
     except Exception as e:
         print(f"::warning::[{category_name}] 抓取失败: {e}")
-    
+
     return data_map
+
+
+def generate_markdown(json_file: str, output_file: str = OUTPUT_MARKDOWN):
+    """从JSON文件生成Markdown格式的物料列表"""
+    if not os.path.exists(json_file):
+        print(f"::warning::文件 {json_file} 不存在")
+        return
+
+    try:
+        with open(json_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"::error::读取 {json_file} 失败: {e}")
+        return
+
+    # 按分类分组
+    categories = {}
+    for model, info in data.items():
+        category = info.get("category", "未分类")
+        if category not in categories:
+            categories[category] = []
+
+        categories[category].append({
+            "model": model,
+            **info
+        })
+
+    # 生成Markdown
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write("# 物料清单\n\n")
+
+        # 生成目录
+        f.write("## 目录\n\n")
+        for idx, category in enumerate(sorted(categories.keys()), 1):
+            count = len(categories[category])
+            f.write(f"{idx}. [{category}](#{category}) ({count} 条)\n")
+
+        f.write("\n---\n\n")
+
+        # 按分类生成表格
+        for category in sorted(categories.keys()):
+            products = categories[category]
+
+            f.write(f"## {category}\n\n")
+            f.write(f"共 {len(products)} 条物料\n\n")
+
+            # 表头
+            f.write("| 型号 | 品牌 | 封装 | CID | 免费数量 | 最小总额 | 产品价格 | 递增数量 |\n")
+            f.write("|------|------|------|------|---------|---------|---------|---------|\n")
+
+            # 表体
+            for product in sorted(products, key=lambda x: x['model']):
+                model = product.get("model", "")
+                brand = product.get("brand", "")
+                encapsulation = product.get("encapsulation", "")
+                product_code = product.get("productCode", "")
+                free_qty = product.get("freeQty", 0)
+                min_total = product.get("minTotal", 0)
+                product_price = product.get("productPrice", 0)
+                need_number = product.get("needNumber", 0)
+                split = product.get("split", 0)
+
+                f.write(
+                    f"| {model} | {brand} | {encapsulation} | {product_code} | "
+                    f"{free_qty} | {min_total} | {product_price} | {need_number} | {split} |\n"
+                )
+
+            f.write("\n")
+
+    print(f"正在写入 {output_file}...")
+    print(f"完成！共 {len(categories)} 个分类，{len(data)} 条物料")
 
 
 async def main():
     print(f"::group::初始化环境")
-    
+
     # 检查环境变量
     cookie = check_env("LCSC_COOKIE")
     uuid = check_env("VOYAGE_UUID")
-    
+
     # 敏感信息打码输出
     cookie_preview = cookie[:20] + "..." if len(cookie) > 20 else "***"
     print(f"LCSC_COOKIE: {cookie_preview}")
     print(f"VOYAGE_UUID: {uuid[:8]}...")
-    
+
     print(f"::endgroup::")
-    
+
     headers = {
         "User-Agent": USER_AGENT,
         "Content-Type": "application/json",
         "Cookie": cookie,
         "Accept": "application/json, text/plain, */*",
     }
-    
+
     async with aiohttp.ClientSession(headers=headers) as session:
         # 获取分类
         print(f"::group::获取分类列表")
         catalogs = await fetch_catalogs(session, uuid)
         print(f"获取到 {len(catalogs)} 个分类")
         print(f"::endgroup::")
-        
+
         # 抓取数据
         print(f"::group::抓取产品数据")
         final_data = {}
-        
+
         for cat in catalogs:
             label = cat.get("label")
             value = cat.get("value")
-            
+
             if not label or not value:
                 continue
-            
+
             category_data = await crawl_category(session, label, value, uuid)
             final_data.update(category_data)
             print(f"{label}: {len(category_data)} 条")
-        
+
         print(f"::endgroup::")
-        
+
         # 写入文件
         print(f"正在写入 {OUTPUT_JSON}...")
         with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
             json.dump(final_data, f, ensure_ascii=False, indent=2)
-        
+
         # GitHub Actions 输出
         print(f"::set-output name=record_count::{len(final_data)}")
         print(f"完成！共抓取 {len(final_data)} 条记录")
-        
+
         # 验证文件
         if not os.path.exists(OUTPUT_JSON) or os.path.getsize(OUTPUT_JSON) == 0:
             print("::error::文件生成失败或为空")
             sys.exit(1)
+
+        # 生成Markdown列表
+        print(f"::group::生成Markdown列表")
+        generate_markdown(OUTPUT_JSON, OUTPUT_MARKDOWN)
+        print(f"::endgroup::")
 
 
 if __name__ == "__main__":
@@ -238,3 +315,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"::error::程序异常: {e}")
         sys.exit(1)
+
