@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      2.0.0
+// @version      2.1.0
 // @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
@@ -608,6 +608,8 @@
         }
 
         const tryProcess = () => {
+            if (document.body.dataset.spprjItemProcessed) return true;
+
             const h1 = document.querySelector('h1');
             const addCartBtn = document.getElementById('addCartBtn-product');
 
@@ -615,6 +617,7 @@
 
             const rawText = h1.textContent || '';
             const cleanText = rawText.trim().toUpperCase().replace(/\s+/g, '');
+            log('H1 文本:', rawText, '清理后:', cleanText);
 
             let productCode = document.querySelectorAll("section div:nth-child(2) div:nth-child(3) dl div:nth-child(4) dd")[0]?.textContent;
             if (!productCode || !(/^C\d+$/.test(productCode))) {
@@ -625,56 +628,55 @@
             if (!productCode) return false;
 
             const dbProductCode = COMPONENT_DATA[cleanText]?.productCode;
+            const isSeaPatrol = COMPONENT_DATA[cleanText] && productCode === dbProductCode;
 
-            log('H1 文本:', rawText, '清理后:', cleanText);
+            const hasLogo = h1.parentElement ? !!h1.parentElement.querySelector('.spprj-sailor-icon') : false;
 
-            if (COMPONENT_DATA[cleanText] && productCode === dbProductCode) {
-                if (h1.querySelector('.spprj-sailor-icon') && document.getElementById('addCartBtn-seaPatrol')) {
-                    return true;
-                }
-
+            if (isSeaPatrol && !hasLogo) {
                 const data = COMPONENT_DATA[cleanText];
-
-                if (!h1.querySelector('.spprj-sailor-icon')) {
-                    const logoWrapper = document.createElement('span');
-                    const altText = `大航海计划: \n免费数量 ${data.freeQty} 个 \n起订需付 ¥${data.minTotal}`;
-                    logoWrapper.innerHTML = `<img alt= "大航海计划" title="${altText}" width="61" height="24" class="ml-[6px]" src="${LOGO}" style="color: transparent;">`;
-                    h1.after(logoWrapper);
-                    log('已添加大航海标识:', cleanText);
-                }
-
-                if (!document.getElementById('addCartBtn-seaPatrol')) {
-                    const targetContainer = addCartBtn.parentElement?.parentElement;
-                    if (targetContainer) {
-                        const seaBtn = document.createElement('button');
-                        seaBtn.id = 'addCartBtn-seaPatrol';
-                        seaBtn.className = 'mt-[10px] flex w-full items-center justify-center h-[48px] border-[#ABB5C9] hover:text-[rgba(57,74,111,0.8)] border-[1px] bg-[#F6F7F9] rounded-[30px] text-[16px] leading-[48px] text-[#394A6F]';
-                        seaBtn.textContent = '大航海预备料';
-
-                        seaBtn.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const list = loadPrepareList();
-                            const idx = list.findIndex(item => item.cid === productCode);
-                            if (idx >= 0) {
-                                list[idx].qty = 1;
-                                alert(`${productCode} 已存在于预备料列表，数量已重置为 1`);
-                            } else {
-                                list.push({ cid: productCode, qty: 1 });
-                                alert(`已将 ${productCode} 加入预备料列表`);
-                            }
-                            savePrepareList(list);
-                        });
-
-                        targetContainer.appendChild(seaBtn);
-                        log('已添加预备料按钮:', cleanText);
-                    }
-                }
-
-                return true;
-            } else {
-                log('未匹配:', cleanText);
+                const logoWrapper = document.createElement('span');
+                const altText = `大航海计划: \n免费数量 ${data.freeQty} 个 \n起订需付 ¥${data.minTotal}`;
+                logoWrapper.innerHTML = `<img alt="大航海计划" title="${altText}" width="61" height="24" class="spprj-sailor-icon ml-[6px]" src="${LOGO}" style="color: transparent;">`;
+                h1.after(logoWrapper);
+                log('已添加大航海标识:', cleanText);
             }
+
+            if (!document.getElementById('addCartBtn-seaPatrol')) {
+                const targetContainer = addCartBtn.parentElement?.parentElement;
+                if (targetContainer) {
+                    const seaBtn = document.createElement('button');
+                    seaBtn.id = 'addCartBtn-seaPatrol';
+                    seaBtn.className = 'mt-[10px] flex w-full items-center justify-center h-[48px] border-[#ABB5C9] hover:text-[rgba(57,74,111,0.8)] border-[1px] bg-[#F6F7F9] rounded-[30px] text-[16px] leading-[48px] text-[#394A6F]';
+                    seaBtn.textContent = '大航海预备料';
+
+                    seaBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const list = loadPrepareList();
+                        const idx = list.findIndex(item => item.cid === productCode);
+                        if (idx >= 0) {
+                            list[idx].qty = 1;
+                            alert(`${productCode} 已存在于预备料列表，数量已重置为 1`);
+                        } else {
+                            list.push({ cid: productCode, qty: 1 });
+                            alert(`已将 ${productCode} 加入预备料列表`);
+                        }
+                        savePrepareList(list);
+                    });
+
+                    targetContainer.appendChild(seaBtn);
+                    log('已添加预备料按钮:', productCode);
+                }
+            }
+
+            const btnAdded = !!document.getElementById('addCartBtn-seaPatrol');
+            const svgAdded = isSeaPatrol ? !!h1.parentElement?.querySelector('.spprj-sailor-icon') : true;
+
+            if (btnAdded && svgAdded) {
+                document.body.dataset.spprjItemProcessed = 'true';
+                return true;
+            }
+
             return false;
         };
 
