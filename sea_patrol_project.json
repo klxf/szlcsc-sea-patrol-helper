@@ -264,8 +264,8 @@
     "productPrice": 0.005643
   },
   "0402WGF1000TCE": {
-    "freeQty": 50,
-    "minTotal": 0.29,
+    "freeQty": 0,
+    "minTotal": 0.58,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
@@ -1067,8 +1067,8 @@
     "productPrice": 0.0088
   },
   "0603WAF2701T5E": {
-    "freeQty": 50,
-    "minTotal": 0.44,
+    "freeQty": 0,
+    "minTotal": 0.88,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
@@ -1320,8 +1320,8 @@
     "productPrice": 0.029997
   },
   "0603WAF2201T5E": {
-    "freeQty": 50,
-    "minTotal": 0.44,
+    "freeQty": 0,
+    "minTotal": 0.89,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
@@ -1430,8 +1430,8 @@
     "productPrice": 0.0105
   },
   "0402WGF1200TCE": {
-    "freeQty": 50,
-    "minTotal": 0.33,
+    "freeQty": 0,
+    "minTotal": 0.66,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
@@ -1474,8 +1474,8 @@
     "productPrice": 0.0491
   },
   "0402WGF4702TCE": {
-    "freeQty": 50,
-    "minTotal": 0.28,
+    "freeQty": 0,
+    "minTotal": 0.56,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
@@ -1496,8 +1496,8 @@
     "productPrice": 0.006
   },
   "0603WAF1201T5E": {
-    "freeQty": 0,
-    "minTotal": 0.86,
+    "freeQty": 50,
+    "minTotal": 0.43,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
@@ -1694,8 +1694,8 @@
     "productPrice": 0.0083
   },
   "0603WAF3300T5E": {
-    "freeQty": 0,
-    "minTotal": 0.97,
+    "freeQty": 50,
+    "minTotal": 0.48,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
@@ -1760,8 +1760,8 @@
     "productPrice": 0.0105
   },
   "0402WGF2001TCE": {
-    "freeQty": 50,
-    "minTotal": 0.23,
+    "freeQty": 0,
+    "minTotal": 0.46,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
@@ -2069,14 +2069,14 @@
   },
   "CC0805KRX7R9BB104": {
     "freeQty": 50,
-    "minTotal": 2.02,
+    "minTotal": 2.37,
     "category": "贴片电容(MLCC)",
     "brand": "YAGEO(国巨)",
     "encapsulation": "0805",
     "productCode": "C49678",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0405
+    "productPrice": 0.0475
   },
   "CL10A226MQ8NRNC": {
     "freeQty": 50,
@@ -2211,8 +2211,8 @@
     "productPrice": 0.0348
   },
   "1206B102K202NT": {
-    "freeQty": 50,
-    "minTotal": 0.0,
+    "freeQty": 0,
+    "minTotal": 2.4,
     "category": "贴片电容(MLCC)",
     "brand": "FH(风华)",
     "encapsulation": "1206",
@@ -2541,8 +2541,8 @@
     "productPrice": 0.069894
   },
   "CL10A106MA8NRNC": {
-    "freeQty": 0,
-    "minTotal": 3.77,
+    "freeQty": 50,
+    "minTotal": 0.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
@@ -2828,14 +2828,14 @@
   },
   "CC0603KRX7R9BB104": {
     "freeQty": 0,
-    "minTotal": 2.52,
+    "minTotal": 3.47,
     "category": "贴片电容(MLCC)",
     "brand": "YAGEO(国巨)",
     "encapsulation": "0603",
     "productCode": "C14663",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0252
+    "productPrice": 0.0347
   },
   "CL21A106KAYNNNE": {
     "freeQty": 0,
@@ -2872,14 +2872,14 @@
   },
   "CL21B105KBFNNNE": {
     "freeQty": 0,
-    "minTotal": 2.05,
+    "minTotal": 2.35,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
     "productCode": "C28323",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.1023
+    "productPrice": 0.1177
   },
   "CL31A226KAHNNNE": {
     "freeQty": 0,
@@ -3156,17 +3156,6 @@
     "split": 30,
     "productPrice": 0.1419
   },
-  "STM32F103CBT6": {
-    "freeQty": 2,
-    "minTotal": 0.0,
-    "category": "单片机(MCU/MPU/SOC)",
-    "brand": "ST(意法半导体)",
-    "encapsulation": "LQFP-48(7x7)",
-    "productCode": "C8304",
-    "needNumber": 1,
-    "split": 1,
-    "productPrice": 13.03
-  },
   "STM8S003F3P6TR": {
     "freeQty": 2,
     "minTotal": 0.0,
@@ -3187,7 +3176,7 @@
     "productCode": "C8734",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 8.9
+    "productPrice": 8.94
   },
   "STM32G030F6P6TR": {
     "freeQty": 2,
@@ -3209,7 +3198,7 @@
     "productCode": "C23922",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 6.1
+    "productPrice": 6.3
   },
   "STM32F030F4P6TR": {
     "freeQty": 2,
@@ -3221,6 +3210,17 @@
     "needNumber": 1,
     "split": 1,
     "productPrice": 4.82
+  },
+  "STM32F103CBT6": {
+    "freeQty": 2,
+    "minTotal": 0.0,
+    "category": "单片机(MCU/MPU/SOC)",
+    "brand": "ST(意法半导体)",
+    "encapsulation": "LQFP-48(7x7)",
+    "productCode": "C8304",
+    "needNumber": 1,
+    "split": 1,
+    "productPrice": 13.03
   },
   "STM32F103RCT6": {
     "freeQty": 2,
@@ -3253,7 +3253,7 @@
     "productCode": "C15742",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 26.23
+    "productPrice": 26.37
   },
   "STM32F407ZGT6": {
     "freeQty": 1,
@@ -3311,8 +3311,8 @@
     "productPrice": 34.98
   },
   "STM32F103RET6": {
-    "freeQty": 0,
-    "minTotal": 20.34,
+    "freeQty": 2,
+    "minTotal": 0.0,
     "category": "单片机(MCU/MPU/SOC)",
     "brand": "ST(意法半导体)",
     "encapsulation": "LQFP-64(10x10)",
@@ -3476,8 +3476,8 @@
     "productPrice": 4.87
   },
   "INN650D080BS": {
-    "freeQty": 2,
-    "minTotal": 0.0,
+    "freeQty": 0,
+    "minTotal": 13.79,
     "category": "氮化镓晶体管(GaN HEMT)",
     "brand": "Innoscience(英诺赛科)",
     "encapsulation": "DFN-8(8x8)",
@@ -3620,14 +3620,14 @@
   },
   "BLM18KG601SN1D": {
     "freeQty": 10,
-    "minTotal": 4.74,
+    "minTotal": 5.94,
     "category": "磁珠",
     "brand": "muRata(村田)",
     "encapsulation": "0603",
     "productCode": "C85833",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.1186
+    "productPrice": 0.1483
   },
   "BLM21PG121SN1D": {
     "freeQty": 10,
@@ -3653,14 +3653,14 @@
   },
   "GZ2012D101TF": {
     "freeQty": 5,
-    "minTotal": 2.18,
+    "minTotal": 2.98,
     "category": "磁珠",
     "brand": "Sunlord(顺络)",
     "encapsulation": "0805",
     "productCode": "C1015",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.1456
+    "productPrice": 0.1984
   },
   "UPZ1608E101-3R0TF": {
     "freeQty": 10,
@@ -4267,6 +4267,17 @@
     "split": 5,
     "productPrice": 0.5865
   },
+  "FXL0420-4R7-M": {
+    "freeQty": 5,
+    "minTotal": 0.0,
+    "category": "功率电感",
+    "brand": "cjiang(长江微电)",
+    "encapsulation": "SMD,4.4x4.2mm",
+    "productCode": "C167208",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 0.62373
+  },
   "FXL0630-6R8-M": {
     "freeQty": 5,
     "minTotal": 0.0,
@@ -4278,17 +4289,6 @@
     "split": 5,
     "productPrice": 0.6311
   },
-  "FXL0420-4R7-M": {
-    "freeQty": 5,
-    "minTotal": 0.0,
-    "category": "功率电感",
-    "brand": "cjiang(长江微电)",
-    "encapsulation": "SMD,4.4x4.2mm",
-    "productCode": "C167208",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 0.7338
-  },
   "FXL0530-100-M": {
     "freeQty": 5,
     "minTotal": 0.0,
@@ -4298,7 +4298,7 @@
     "productCode": "C177248",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.8167
+    "productPrice": 0.718696
   },
   "T44001": {
     "freeQty": 3,
@@ -4522,14 +4522,14 @@
   },
   "HT7533-1": {
     "freeQty": 2,
-    "minTotal": 2.21,
+    "minTotal": 2.32,
     "category": "线性稳压器(LDO)",
     "brand": "HOLTEK(合泰/盛群)",
     "encapsulation": "SOT-89-3",
     "productCode": "C14289",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.7388
+    "productPrice": 0.7738
   },
   "SPX3819M5-L-3-3/TR": {
     "freeQty": 5,
@@ -4984,14 +4984,14 @@
   },
   "SY7200AABC": {
     "freeQty": 3,
-    "minTotal": 2.02,
+    "minTotal": 2.07,
     "category": "LED驱动",
     "brand": "Silergy(矽力杰)",
     "encapsulation": "SOT-23-6",
     "productCode": "C107309",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.0123
+    "productPrice": 1.035
   },
   "AP3032KTR-G1": {
     "freeQty": 3,
@@ -5578,14 +5578,14 @@
   },
   "W25Q32JVSSIQ": {
     "freeQty": 0,
-    "minTotal": 14.44,
+    "minTotal": 740.64,
     "category": "NOR FLASH",
     "brand": "Winbond(华邦)",
     "encapsulation": "SOIC-8-208mil",
     "productCode": "C82344",
-    "needNumber": 2,
-    "split": 2,
-    "productPrice": 7.22
+    "needNumber": 70,
+    "split": 1,
+    "productPrice": 10.580529
   },
   "W25Q128JVSIQ": {
     "freeQty": 2,
@@ -5611,14 +5611,14 @@
   },
   "W25Q16JVUXIQ": {
     "freeQty": 2,
-    "minTotal": 37.38,
+    "minTotal": 26.43,
     "category": "NOR FLASH",
     "brand": "Winbond(华邦)",
     "encapsulation": "USON-8-EP(2x3)",
     "productCode": "C2843335",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 12.46
+    "productPrice": 8.81
   },
   "LM358DR": {
     "freeQty": 5,
@@ -6006,8 +6006,8 @@
     "productPrice": 12.31
   },
   "ISO7721DR": {
-    "freeQty": 0,
-    "minTotal": 3.64,
+    "freeQty": 3,
+    "minTotal": 0.0,
     "category": "数字隔离器",
     "brand": "TI(德州仪器)",
     "encapsulation": "SOIC-8",
@@ -6060,17 +6060,6 @@
     "split": 1,
     "productPrice": 3.43
   },
-  "ADS1115IDGSR": {
-    "freeQty": 2,
-    "minTotal": 0.0,
-    "category": "模数转换芯片ADC",
-    "brand": "TI(德州仪器)",
-    "encapsulation": "VSSOP-10",
-    "productCode": "C37593",
-    "needNumber": 1,
-    "split": 1,
-    "productPrice": 9.27
-  },
   "ADS1110A0IDBVR": {
     "freeQty": 2,
     "minTotal": 0.0,
@@ -6103,6 +6092,17 @@
     "needNumber": 1,
     "split": 1,
     "productPrice": 42.5
+  },
+  "ADS1115IDGSR": {
+    "freeQty": 2,
+    "minTotal": 0.0,
+    "category": "模数转换芯片ADC",
+    "brand": "TI(德州仪器)",
+    "encapsulation": "VSSOP-10",
+    "productCode": "C37593",
+    "needNumber": 1,
+    "split": 1,
+    "productPrice": 9.27
   },
   "ADS1015IDGSR": {
     "freeQty": 2,
@@ -6238,14 +6238,14 @@
   },
   "SN74LVC4245APWR": {
     "freeQty": 0,
-    "minTotal": 11.21,
+    "minTotal": 2.89,
     "category": "转换器/电平移位器",
     "brand": "TI(德州仪器)",
     "encapsulation": "TSSOP-24",
     "productCode": "C7859",
-    "needNumber": 5,
+    "needNumber": 1,
     "split": 1,
-    "productPrice": 2.2425
+    "productPrice": 2.89
   },
   "LIS2MDLTR": {
     "freeQty": 2,
@@ -6512,8 +6512,8 @@
     "productPrice": 4.34
   },
   "CH340N": {
-    "freeQty": 0,
-    "minTotal": 3.94,
+    "freeQty": 2,
+    "minTotal": 0.0,
     "category": "USB转换芯片",
     "brand": "WCH(南京沁恒)",
     "encapsulation": "SOP-8",
@@ -6733,14 +6733,14 @@
   },
   "63849-1": {
     "freeQty": 3,
-    "minTotal": 3.75,
+    "minTotal": 3.81,
     "category": "焊接插片端子",
     "brand": "TE Connectivity(泰科电子)",
     "encapsulation": "插件",
     "productCode": "C86469",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.5356
+    "productPrice": 0.5451
   },
   "TYPE-C 16PIN 2MD(073)": {
     "freeQty": 3,
@@ -7334,7 +7334,7 @@
     "productCode": "C7171",
     "needNumber": 2,
     "split": 2,
-    "productPrice": 0.8894
+    "productPrice": 0.9692
   },
   "TAJB107K006RNJ": {
     "freeQty": 2,
@@ -7492,14 +7492,14 @@
   },
   "OPA2188AIDR": {
     "freeQty": 0,
-    "minTotal": 3.12,
+    "minTotal": 3.3,
     "category": "精密运放",
     "brand": "TI(德州仪器)",
     "encapsulation": "SOIC-8",
     "productCode": "C17271",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 3.12
+    "productPrice": 3.3
   },
   "AT2659": {
     "freeQty": 5,
@@ -7873,7 +7873,7 @@
     "productCode": "C7873",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 3.42
+    "productPrice": 3.58
   },
   "TL072CDT": {
     "freeQty": 5,
