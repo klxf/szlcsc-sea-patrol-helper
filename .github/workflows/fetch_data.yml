@@ -33,13 +33,19 @@ jobs:
         run: |
           python sea_patrol_project.py
 
-      - name: Check if file generated
+      - name: Check if files generated
         run: |
           if [ ! -f "sea_patrol_project.json" ]; then
             echo "JSON 文件未生成"
             exit 1
           fi
-          echo "文件已生成，大小: $(du -h sea_patrol_project.json | cut -f1)"
+          echo "JSON 文件已生成，大小: $(du -h sea_patrol_project.json | cut -f1)"
+          
+          if [ ! -f "LIST.md" ]; then
+            echo "Markdown 文件未生成"
+            exit 1
+          fi
+          echo "Markdown 文件已生成，大小: $(du -h LIST.md | cut -f1)"
 
       - name: Configure Git
         run: |
@@ -48,7 +54,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add sea_patrol_project.json
+          git add sea_patrol_project.json LIST.md
           if git diff --staged --quiet; then
             echo "数据未变更，无需提交"
           else
