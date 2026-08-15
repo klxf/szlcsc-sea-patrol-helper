@@ -243,14 +243,14 @@
   },
   "0603WAF2000T5E": {
     "freeQty": 50,
-    "minTotal": 1.9,
+    "minTotal": 1.88,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C8218",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0381
+    "productPrice": 0.0377
   },
   "1206W4F100LT5E": {
     "freeQty": 50,
@@ -1497,14 +1497,14 @@
   },
   "0603WAF220KT5E": {
     "freeQty": 50,
-    "minTotal": 1.73,
+    "minTotal": 1.74,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C22939",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0347
+    "productPrice": 0.0348
   },
   "0805W8F510KT5E": {
     "freeQty": 50,
@@ -1991,15 +1991,15 @@
     "productPrice": 0.0424
   },
   "0805W8F470KT5E": {
-    "freeQty": 0,
-    "minTotal": 4.05,
+    "freeQty": 50,
+    "minTotal": 2.93,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
     "productCode": "C17675",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0405
+    "productPrice": 0.0587
   },
   "CL21A106KAYNNNE": {
     "freeQty": 50,
@@ -3641,15 +3641,15 @@
     "productPrice": 0.5059
   },
   "XL2EL89COI-111YLC-8M": {
-    "freeQty": 0,
-    "minTotal": 5.06,
+    "freeQty": 5,
+    "minTotal": 0.0,
     "category": "无源晶振",
     "brand": "YXC(扬兴晶振)",
     "encapsulation": "SMD3225-4P",
     "productCode": "C2973805",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.0122
+    "productPrice": 1.011
   },
   "SS8050": {
     "freeQty": 5,
@@ -3686,14 +3686,14 @@
   },
   "MMBT3904(RANGE:100-300)": {
     "freeQty": 5,
-    "minTotal": 3.46,
+    "minTotal": 3.47,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C20526",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.077
+    "productPrice": 0.0772
   },
   "S8050 J3Y(RANGE:200-350)": {
     "freeQty": 5,
@@ -3708,14 +3708,14 @@
   },
   "MMBT5551(RANGE:200-300)": {
     "freeQty": 5,
-    "minTotal": 4.76,
+    "minTotal": 4.89,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C2145",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.1057
+    "productPrice": 0.1086
   },
   "SS8050(RANGE:200-350)": {
     "freeQty": 0,
@@ -5321,7 +5321,7 @@
     "productCode": "C34758",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 3.31
+    "productPrice": 3.35
   },
   "G5NB-1A-E DC12": {
     "freeQty": 2,
@@ -6689,14 +6689,14 @@
   },
   "SP3232EEN(UMW)": {
     "freeQty": 3,
-    "minTotal": 3.5,
+    "minTotal": 3.26,
     "category": "RS232芯片",
     "brand": "UMW(友台半导体)",
     "encapsulation": "SOP-16",
     "productCode": "C2904739",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.752
+    "productPrice": 1.6274
   },
   "SP3232EEY-L/TR": {
     "freeQty": 2,
@@ -6993,7 +6993,7 @@
     "productCode": "C81582",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 14.09
+    "productPrice": 14.73
   },
   "TMC2209-LA-T": {
     "freeQty": 2,
