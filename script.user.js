@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         立创商城大航海计划助手
 // @namespace    https://github.com/klxf/szlcsc-sea-patrol-helper
-// @version      2.1.1
+// @version      2.1.2
 // @description  在搜索结果与详情页中标记大航海计划内的器件
 // @author       klxf
 // @match        https://so.szlcsc.com/*
@@ -38,6 +38,49 @@
     const PRODUCT_CODE_SELECTOR = 'div div section div div div:nth-child(2) dl:nth-child(5) dd';
 
     const LOGO = "https://static.szlcsc.com/ecp/assets/web/page/order/orderManage/images/big-sea.svg";
+
+    function showToast(message, type = 'info', duration = 3000) {
+        const container = document.getElementById('spprj-toast-container');
+        if (!container) {
+            const c = document.createElement('div');
+            c.id = 'spprj-toast-container';
+            document.body.appendChild(c);
+        }
+
+        const toast = document.createElement('div');
+        toast.className = 'spprj-toast spprj-toast-' + type;
+
+        const iconMap = {
+            success: '<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>',
+            error: '<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd"/></svg>',
+            warning: '<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>',
+            info: '<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"/></svg>'
+        };
+
+        toast.innerHTML = iconMap[type] || iconMap.info;
+        const textSpan = document.createElement('span');
+        textSpan.textContent = message;
+        toast.appendChild(textSpan);
+
+        const containerEl = document.getElementById('spprj-toast-container');
+        containerEl.appendChild(toast);
+
+        // 触发动画
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                toast.classList.add('spprj-toast-visible');
+            });
+        });
+
+        // 自动移除
+        setTimeout(() => {
+            toast.classList.remove('spprj-toast-visible');
+            toast.classList.add('spprj-toast-hiding');
+            setTimeout(() => {
+                if (toast.parentNode) toast.remove();
+            }, 300);
+        }, duration);
+    }
 
     function loadStoredData() {
         const saved = GM_getValue(STORAGE_KEY_DATA, null);
@@ -237,7 +280,7 @@
                 const currentList = loadPrepareList();
                 if (currentList[idx]) {
                     if (isNaN(newQty) || newQty <= 0) {
-                        alert('请输入有效的数量');
+                        showToast('请输入有效的数量', 'warning');
                         e.target.value = currentList[idx].qty;
                         return;
                     }
@@ -277,13 +320,13 @@
         btn.addEventListener('click', async () => {
             const uuid = new URLSearchParams(location.search).get('uuid');
             if (!uuid) {
-                alert('无法获取项目 UUID，请确认 URL 包含 uuid 参数');
+                showToast('无法获取项目 UUID，请确认 URL 包含 uuid 参数', 'error');
                 return;
             }
 
             const list = loadPrepareList();
             if (list.length === 0) {
-                alert('预备料列表为空');
+                showToast('预备料列表为空', 'warning');
                 return;
             }
 
@@ -309,12 +352,12 @@
 
                 const result = await response.json();
                 if (response.ok && (result.code === 200 || result.success === true)) {
-                    alert('备料成功！共提交 ' + productList.length + ' 个物料');
+                    showToast('备料成功！共提交 ' + productList.length + ' 个物料', 'success');
                 } else {
-                    alert('备料失败：' + (result.message || result.msg || JSON.stringify(result)));
+                    showToast('备料失败：' + (result.message || result.msg || JSON.stringify(result)), 'error');
                 }
             } catch (e) {
-                alert('备料请求失败：' + e.message);
+                showToast('备料请求失败：' + e.message, 'error');
             }
         });
     }
@@ -324,19 +367,19 @@
         const url = GM_getValue(STORAGE_KEY_URL, DEFAULT_URL);
         try {
             await fetchDataFromURL(url);
-            alert(`数据已更新：${Object.keys(COMPONENT_DATA).length} 条`);
+            showToast(`数据已更新：${Object.keys(COMPONENT_DATA).length} 条`, 'success');
             if (highlighter) highlighter.rescan();
         } catch (e) {
-            alert('获取失败: ' + e.message);
+            showToast('获取失败: ' + e.message, 'error');
         }
     });
     GM_registerMenuCommand('管理预备料', openPrepareManager);
     GM_registerMenuCommand('清理缓存', async () => {
         try {
             GM_setValue(STORAGE_KEY_DATA, undefined);
-            alert('缓存已清除');
+            showToast('缓存已清除', 'success');
         } catch (e) {
-            alert('清理失败: ' + e.message);
+            showToast('清理失败: ' + e.message, 'error');
         }
     });
 
@@ -454,7 +497,7 @@
             tip.id = 'spprj-tip';
             tip.innerHTML = `<div class="spprj-tip-title"></div>
                 <div class="spprj-tip-row">免费数量: <span class="spprj-tip-val" id="tip-free"></span></div>
-                <div class="spprj-tip-row">起订需付: <span class="spprj-tip-val" id="tip-price"></span></div>
+                <div class="spprj-tip-row">起订预计: <span class="spprj-tip-val" id="tip-price"></span></div>
                 <div class="spprj-tip-row">* 仅立创商城现货可免费</div>`;
             document.body.appendChild(tip);
             return tip;
@@ -634,9 +677,61 @@
 
             if (isSeaPatrol && !hasLogo) {
                 const data = COMPONENT_DATA[cleanText];
+
                 const logoWrapper = document.createElement('span');
-                const altText = `大航海计划: \n免费数量 ${data.freeQty} 个 \n起订需付 ¥${data.minTotal}`;
-                logoWrapper.innerHTML = `<img alt="大航海计划" title="${altText}" width="61" height="24" class="spprj-sailor-icon ml-[6px]" src="${LOGO}" style="color: transparent;">`;
+                logoWrapper.style.display = 'inline-flex';
+                logoWrapper.style.verticalAlign = 'middle';
+                logoWrapper.style.marginLeft = '6px';
+                logoWrapper.style.cursor = 'pointer';
+
+                const img = document.createElement('img');
+                img.alt = '大航海计划';
+                img.width = 61;
+                img.height = 24;
+                img.className = 'spprj-sailor-icon';
+                img.src = LOGO;
+                img.style.color = 'transparent';
+                logoWrapper.appendChild(img);
+
+                let tip = document.getElementById('spprj-tip');
+                if (!tip) {
+                    tip = document.createElement('div');
+                    tip.id = 'spprj-tip';
+                    tip.innerHTML = `
+                        <div class="spprj-tip-title"></div>
+                        <div class="spprj-tip-row">免费数量: <span class="spprj-tip-val" id="tip-free"></span></div>
+                        <div class="spprj-tip-row">起订预计: <span class="spprj-tip-val" id="tip-price"></span></div>
+                        <div class="spprj-tip-row">* 仅立创商城现货可免费</div>
+                    `;
+                    document.body.appendChild(tip);
+                }
+
+                logoWrapper.addEventListener('mouseenter', (e) => {
+                    tip.querySelector('.spprj-tip-title').textContent = cleanText;
+                    tip.querySelector('#tip-free').textContent = (data.freeQty || 0) + '个';
+                    tip.querySelector('#tip-price').textContent = '¥' + (data.minTotal || 0);
+
+                    tip.style.display = 'block';
+                    tip.style.opacity = '1';
+
+                    const rect = tip.getBoundingClientRect();
+                    let left = e.clientX + 15;
+                    let top = e.clientY - rect.height - 10;
+
+                    if (left + rect.width > window.innerWidth) left = e.clientX - rect.width - 10;
+                    if (top < 0) top = e.clientY + 20;
+
+                    tip.style.left = left + 'px';
+                    tip.style.top = top + 'px';
+                });
+
+                logoWrapper.addEventListener('mouseleave', () => {
+                    tip.style.opacity = '0';
+                    setTimeout(() => {
+                        if (tip.style.opacity === '0') tip.style.display = 'none';
+                    }, 200);
+                });
+
                 h1.after(logoWrapper);
                 log('已添加大航海标识:', cleanText);
             }
@@ -661,13 +756,13 @@
                         if (idx >= 0) {
                             list[idx].qty += minQty;
                             if (isSeaPatrol && list[idx].qty > COMPONENT_DATA[cleanText]?.freeQty) {
-                                alert(`${productCode} 为已存在于预备料列表的大航海计划器件，数量增加 ${minQty} 个，已超出免费范围（${COMPONENT_DATA[cleanText].freeQty}）`);
+                                showToast(`${productCode} 为已存在于预备料列表的大航海计划器件，数量增加 ${minQty} 个，已超出免费范围（${COMPONENT_DATA[cleanText].freeQty}）`, 'warning');
                             } else {
-                                alert(`${productCode} 已存在于预备料列表，数量增加 ${minQty} 个`);
+                                showToast(`${productCode} 已存在于预备料列表，数量增加 ${minQty} 个`, 'info');
                             }
                         } else {
                             list.push({ cid: productCode, qty: minQty });
-                            alert(`已将 ${minQty} 个 ${productCode} 加入预备料列表`);
+                            showToast(`已将 ${minQty} 个 ${productCode} 加入预备料列表`, 'success');
                         }
                         savePrepareList(list);
                     });
@@ -700,14 +795,10 @@
     GM_addStyle(`
         .spprj-matched, [data-spprj-marked="true"] {
             position: relative !important;
-            background: linear-gradient(90deg, rgba(255, 230, 230, 0.6) 0%, transparent 100%) !important;
-            border-left: 3px solid #ff4444 !important;
+            background: linear-gradient(90deg, rgb(0 147 230 / 0.4) 0%, transparent 100%) !important;
+            border-left: 3px solid #0093E6 !important;
             padding-left: 8px !important;
             transition: all 0.2s ease !important;
-        }
-        .spprj-matched:hover {
-            background: linear-gradient(90deg, rgba(255, 230, 230, 0.9) 0%, rgba(255, 240, 240, 0.3) 100%) !important;
-            box-shadow: 0 0 8px rgba(255, 0, 0, 0.1) !important;
         }
         .spprj-badge {
             display: inline-flex;
@@ -715,7 +806,7 @@
             justify-content: center;
             width: 16px;
             height: 16px;
-            background: #ff4444;
+            background: #0093E6;
             color: white;
             border-radius: 50%;
             font-size: 11px;
@@ -736,12 +827,12 @@
             display: none;
             opacity: 0;
             transition: opacity 0.2s;
-            border: 1px solid #ff6b6b;
+            border: 1px solid #0093E6;
             pointer-events: none;
             min-width: 160px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
-        .spprj-tip-title { color: #ff6b6b; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #555; padding-bottom: 4px; font-size: 14px; }
+        .spprj-tip-title { color: #47B2ED; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #555; padding-bottom: 4px; font-size: 14px; }
         .spprj-tip-row { display: flex; justify-content: space-between; margin: 4px 0; color: #ccc; font-size: 12px; }
         .spprj-tip-val { color: #4ade80; font-weight: 600; margin-left: 10px; }
 
@@ -812,6 +903,59 @@
             transition: all 0.2s ease;
         }
         .spprj-prepare-float-btn:hover { background: #014EFE; }
+
+        #spprj-toast-container {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2147483647;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            pointer-events: none;
+        }
+        .spprj-toast {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            min-width: 200px;
+            max-width: 420px;
+            opacity: 0;
+            transform: translateY(-20px) scale(0.95);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: auto;
+            word-break: break-word;
+            line-height: 1.5;
+        }
+        .spprj-toast svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        .spprj-toast-success { background: #10b981; border: 1px solid #059669; }
+        .spprj-toast-success svg { color: #d1fae5; }
+        .spprj-toast-error { background: #ef4444; border: 1px solid #dc2626; }
+        .spprj-toast-error svg { color: #fee2e2; }
+        .spprj-toast-warning { background: #f59e0b; border: 1px solid #d97706; }
+        .spprj-toast-warning svg { color: #fef3c7; }
+        .spprj-toast-info { background: #3b82f6; border: 1px solid #2563eb; }
+        .spprj-toast-info svg { color: #dbeafe; }
+        .spprj-toast-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .spprj-toast-hiding {
+            opacity: 0;
+            transform: translateY(-10px) scale(0.95);
+        }
     `);
 
     async function init() {
