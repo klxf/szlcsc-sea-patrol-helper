@@ -1,6 +1,6 @@
 # 立创商城大航海计划助手
 
-## [安装脚本](https://greasyfork.org/scripts/570934) · [物料清单](LIST.md) · [物料列表](https://klxf.github.io/szlcsc-sea-patrol-helper/)
+## [安装脚本](https://greasyfork.org/scripts/570934) · [物料清单](LIST.md) · [网页物料列表](https://klxf.github.io/szlcsc-sea-patrol-helper/)
 
 ## 介绍
 
