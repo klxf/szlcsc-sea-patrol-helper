@@ -2146,14 +2146,14 @@
   },
   "CL05B103KB5NNNC": {
     "freeQty": 50,
-    "minTotal": 1.47,
+    "minTotal": 1.24,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0402",
     "productCode": "C15195",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0295
+    "productPrice": 0.0248
   },
   "CL10C101JB8NNNC": {
     "freeQty": 50,
@@ -2927,14 +2927,14 @@
   },
   "CL10C330JB8NNNC": {
     "freeQty": 50,
-    "minTotal": 1.93,
+    "minTotal": 0.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
     "productCode": "C1663",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0387
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0535
   },
   "CL21C470JBANNNC": {
     "freeQty": 30,
