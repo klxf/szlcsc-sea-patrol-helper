@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="立创商城大航海计划物料可视化列表">
+  <title>大航海计划物料列表</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-shell header-inner">
+      <div class="brand">
+        <h1>大航海计划物料列表</h1>
+      </div>
+      <button id="settings-button" class="ghost-button icon-button" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>设置</span>
+      </button>
+    </div>
+  </header>
+
+  <button id="tour-button" class="tour-button" type="button" aria-label="漫游式引导" title="漫游式引导">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>引导</span>
+  </button>
+
+  <main class="app-shell app-layout" id="app-layout">
+    <aside class="sidebar" aria-label="分类列表">
+      <div class="sidebar-heading">
+        <h2>分类列表</h2>
+        <span id="category-total" class="muted">--</span>
+      </div>
+      <label class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="category-search" type="search" placeholder="搜索分类" autocomplete="off">
+      </label>
+      <div id="category-list" class="category-list" role="list"></div>
+    </aside>
+
+    <section class="content" aria-label="物料内容">
+      <div id="welcome-view" class="welcome-view">
+        <h2>请在左侧选择分类</h2>
+        <p>数据会从当前数据源加载，分类中的物料不会下载到服务器。</p>
+        <div class="recommended">
+          <h3>推荐链接</h3>
+          <div class="link-list">
+            <a class="recommended-link" href="https://draconis.cn/" target="_blank" rel="noopener noreferrer">
+              <strong>龙枢造物</strong>
+              <span>为 Furry 社区提供电子技术解决方案</span>
+            </a>
+            <a class="recommended-link" href="https://activity.szlcsc.com/sea_patrol_project.html" target="_blank" rel="noopener noreferrer">
+              <strong>立创商城大航海计划</strong>
+              <span>进入活动页面查看项目与物料</span>
+            </a>
+            <a class="recommended-link" href="https://greasyfork.org/scripts/570934" target="_blank" rel="noopener noreferrer">
+              <strong>浏览器脚本</strong>
+              <span>安装后可自动标识和一键备料</span>
+            </a>
+            <a class="recommended-link" href="https://github.com/klxf/szlcsc-sea-patrol-helper" target="_blank" rel="noopener noreferrer">
+              <strong>项目仓库</strong>
+              <span>查看源码、脚本与数据更新说明</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="category-view" class="category-view" hidden>
+        <div class="content-toolbar">
+          <button id="back-button" class="ghost-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            <span>返回</span>
+          </button>
+          <div class="category-title">
+            <h2 id="selected-category">未选择分类</h2>
+            <span id="material-count" class="muted">0 条物料</span>
+          </div>
+        </div>
+
+        <div class="filter-bar" aria-label="条件选择区">
+          <label class="search-field compact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input id="material-search" type="search" placeholder="搜索型号、品牌、封装或 CID" autocomplete="off">
+          </label>
+          <div class="filter-controls">
+            <label class="check-control">
+              <input id="zero-filter" type="checkbox">
+              <span>仅显示零元起订物料</span>
+            </label>
+            <label class="check-control">
+              <input id="available-filter" type="checkbox">
+              <span>仅显示有免费数量</span>
+            </label>
+            <label class="select-control">
+              <span>排序</span>
+              <select id="sort-mode">
+                <option value="price-asc">单价从低到高</option>
+                <option value="min-total-asc">起订总额从低到高</option>
+                <option value="free-desc">免费数量从多到少</option>
+                <option value="model-asc">型号 A-Z</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div id="material-list" class="material-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-title">
+    <form method="dialog">
+      <div class="dialog-header">
+        <h2 id="settings-title">设置数据源</h2>
+        <button class="ghost-button icon-button" type="submit" value="close" aria-label="关闭设置">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <label for="data-source-url">JSON 数据源 URL</label>
+        <input id="data-source-url" type="url" required spellcheck="false" autocomplete="off">
+        <p id="source-status" class="muted" role="status"></p>
+      </div>
+      <div class="dialog-actions">
+        <button id="reset-source" class="ghost-button" type="button">恢复默认</button>
+        <button id="save-source" class="primary-button" type="button">保存并加载</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="tour-overlay" class="tour-overlay" hidden>
+    <div id="tour-spotlight" class="tour-spotlight" aria-hidden="true"></div>
+    <section id="tour-popover" class="tour-popover" role="dialog" aria-modal="true" aria-labelledby="tour-title" aria-live="polite">
+      <div class="tour-header">
+        <span id="tour-step" class="tour-step">1 / 1</span>
+        <button id="tour-skip" class="ghost-button icon-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <span>跳过</span>
+        </button>
+      </div>
+      <h2 id="tour-title">欢迎</h2>
+      <p id="tour-description">正在准备引导...</p>
+      <div class="tour-actions">
+        <button id="tour-back" class="ghost-button" type="button">上一步</button>
+        <button id="tour-next" class="primary-button" type="button">开始</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
