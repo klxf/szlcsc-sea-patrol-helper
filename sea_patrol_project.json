@@ -1,4 +1,15 @@
 {
+  "0603WAF1002T5E": {
+    "freeQty": 50,
+    "minTotal": 0.65,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C25804",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0131
+  },
   "0402WGF1001TCE": {
     "freeQty": 50,
     "minTotal": 0.38,
@@ -9,6 +20,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0077
+  },
+  "0603WAF1001T5E": {
+    "freeQty": 50,
+    "minTotal": 0.5,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C21190",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0101
   },
   "0603WAF0000T5E": {
     "freeQty": 50,
@@ -34,14 +56,14 @@
   },
   "0603WAF1003T5E": {
     "freeQty": 50,
-    "minTotal": 0.93,
+    "minTotal": 0.88,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C25803",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0187
+    "productPrice": 0.0176
   },
   "0805W8F1002T5E": {
     "freeQty": 50,
@@ -53,6 +75,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0202
+  },
+  "0603WAF1000T5E": {
+    "freeQty": 50,
+    "minTotal": 0.69,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22775",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0139
   },
   "0805W8F1001T5E": {
     "freeQty": 50,
@@ -67,36 +100,25 @@
   },
   "0402WGF1003TCE": {
     "freeQty": 50,
-    "minTotal": 0.45,
+    "minTotal": 0.36,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25741",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.009
+    "productPrice": 0.0073
   },
   "0402WGF4701TCE": {
     "freeQty": 50,
-    "minTotal": 0.63,
+    "minTotal": 0.59,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25900",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0127
-  },
-  "0603WAF1000T5E": {
-    "freeQty": 50,
-    "minTotal": 0.68,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22775",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0137
+    "productPrice": 0.0118
   },
   "0603WAF2001T5E": {
     "freeQty": 50,
@@ -155,14 +177,14 @@
   },
   "0805W8F4701T5E": {
     "freeQty": 50,
-    "minTotal": 1.53,
+    "minTotal": 1.17,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
     "productCode": "C17673",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0306
+    "productPrice": 0.0234
   },
   "1206W4F0000T5E": {
     "freeQty": 50,
@@ -186,17 +208,6 @@
     "split": 100,
     "productPrice": 0.0073
   },
-  "0603WAF1001T5E": {
-    "freeQty": 50,
-    "minTotal": 0.5,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C21190",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0101
-  },
   "0603WAF220JT5E": {
     "freeQty": 50,
     "minTotal": 0.5,
@@ -207,6 +218,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0101
+  },
+  "0603WAF1004T5E": {
+    "freeQty": 50,
+    "minTotal": 0.54,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22935",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0108
   },
   "0603WAF2002T5E": {
     "freeQty": 50,
@@ -229,17 +251,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0135
-  },
-  "1206W4F1004T5E": {
-    "freeQty": 50,
-    "minTotal": 1.25,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "1206",
-    "productCode": "C17927",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0251
   },
   "0805W8F1000T5E": {
     "freeQty": 50,
@@ -274,6 +285,39 @@
     "split": 100,
     "productPrice": 0.036
   },
+  "0402WGF0000TCE": {
+    "freeQty": 50,
+    "minTotal": 0.29,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0402",
+    "productCode": "C17168",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0058
+  },
+  "0603WAF4702T5E": {
+    "freeQty": 50,
+    "minTotal": 0.57,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C25819",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0115
+  },
+  "0603WAF750JT5E": {
+    "freeQty": 50,
+    "minTotal": 0.62,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C4275",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0124
+  },
   "0603WAF5100T5E": {
     "freeQty": 50,
     "minTotal": 0.62,
@@ -307,28 +351,6 @@
     "split": 100,
     "productPrice": 0.0142
   },
-  "0603WAF750JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.76,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C4275",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0153
-  },
-  "0805W8F2001T5E": {
-    "freeQty": 50,
-    "minTotal": 1.1,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17604",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0221
-  },
   "0805W8F100JT5E": {
     "freeQty": 50,
     "minTotal": 1.21,
@@ -340,16 +362,16 @@
     "split": 100,
     "productPrice": 0.0242
   },
-  "0805W8F2002T5E": {
+  "1206W4F1004T5E": {
     "freeQty": 50,
-    "minTotal": 1.26,
+    "minTotal": 1.25,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C4328",
+    "encapsulation": "1206",
+    "productCode": "C17927",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0252
+    "productPrice": 0.0251
   },
   "1206W4F1002T5E": {
     "freeQty": 50,
@@ -373,27 +395,38 @@
     "split": 50,
     "productPrice": 0.0518
   },
-  "0402WGF0000TCE": {
-    "freeQty": 50,
-    "minTotal": 0.33,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C17168",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0066
-  },
   "0603WAF2200T5E": {
     "freeQty": 50,
-    "minTotal": 1.0,
+    "minTotal": 0.56,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C22962",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.02
+    "productPrice": 0.0112
+  },
+  "0805W8F2001T5E": {
+    "freeQty": 50,
+    "minTotal": 1.1,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17604",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0221
+  },
+  "0805W8F2002T5E": {
+    "freeQty": 50,
+    "minTotal": 1.26,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C4328",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0252
   },
   "0603WAF3002T5E": {
     "freeQty": 50,
@@ -439,28 +472,6 @@
     "split": 50,
     "productPrice": 0.0582
   },
-  "0603WAF1004T5E": {
-    "freeQty": 50,
-    "minTotal": 0.54,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22935",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0108
-  },
-  "1206W4F100JT5E": {
-    "freeQty": 30,
-    "minTotal": 2.04,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "1206",
-    "productCode": "C17903",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0292
-  },
   "0402WGF2201TCE": {
     "freeQty": 50,
     "minTotal": 0.33,
@@ -492,7 +503,7 @@
     "productCode": "C22787",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0112
+    "productPrice": 0.0113
   },
   "0603WAF4700T5E": {
     "freeQty": 50,
@@ -505,49 +516,49 @@
     "split": 100,
     "productPrice": 0.0139
   },
+  "1206W4F100JT5E": {
+    "freeQty": 30,
+    "minTotal": 2.05,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "1206",
+    "productCode": "C17903",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0293
+  },
   "0402WGF2002TCE": {
     "freeQty": 50,
-    "minTotal": 0.32,
+    "minTotal": 0.33,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25765",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0065
+    "productPrice": 0.0066
   },
   "0402WGF1004TCE": {
     "freeQty": 50,
-    "minTotal": 0.43,
+    "minTotal": 0.45,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C26083",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0086
-  },
-  "0603WAF510JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.48,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23197",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0097
+    "productPrice": 0.009
   },
   "0402WGF4702TCE": {
     "freeQty": 50,
-    "minTotal": 0.59,
+    "minTotal": 0.57,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25792",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0119
+    "productPrice": 0.0115
   },
   "0603WAF3300T5E": {
     "freeQty": 50,
@@ -582,6 +593,17 @@
     "split": 100,
     "productPrice": 0.0156
   },
+  "0603WAF1502T5E": {
+    "freeQty": 50,
+    "minTotal": 0.87,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22809",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0174
+  },
   "0603WAF2000T5E": {
     "freeQty": 50,
     "minTotal": 1.16,
@@ -604,49 +626,38 @@
     "split": 100,
     "productPrice": 0.0251
   },
-  "0805W8F1200T5E": {
-    "freeQty": 50,
-    "minTotal": 1.99,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17437",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0399
-  },
   "0402WGF3300TCE": {
     "freeQty": 50,
-    "minTotal": 0.33,
+    "minTotal": 0.32,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25104",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0067
-  },
-  "0402WGF1002TCE": {
-    "freeQty": 50,
-    "minTotal": 0.38,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C25744",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0076
+    "productPrice": 0.0065
   },
   "0402WGF2003TCE": {
     "freeQty": 50,
-    "minTotal": 0.5,
+    "minTotal": 0.39,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25764",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0101
+    "productPrice": 0.0078
+  },
+  "0603WAF510JT5E": {
+    "freeQty": 50,
+    "minTotal": 0.48,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23197",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0097
   },
   "0603WAF5102T5E": {
     "freeQty": 50,
@@ -670,17 +681,6 @@
     "split": 100,
     "productPrice": 0.0117
   },
-  "0402WGF499JTCE": {
-    "freeQty": 50,
-    "minTotal": 0.59,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C25120",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0118
-  },
   "0603WAF470JT5E": {
     "freeQty": 50,
     "minTotal": 0.59,
@@ -691,6 +691,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0119
+  },
+  "0603WAF499JT5E": {
+    "freeQty": 50,
+    "minTotal": 0.6,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23185",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0121
   },
   "0603WAF2003T5E": {
     "freeQty": 50,
@@ -703,17 +714,6 @@
     "split": 100,
     "productPrice": 0.0123
   },
-  "0603WAF499JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.62,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23185",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0125
-  },
   "0402WGF1501TCE": {
     "freeQty": 50,
     "minTotal": 0.86,
@@ -725,17 +725,6 @@
     "split": 100,
     "productPrice": 0.0173
   },
-  "0603WAF1502T5E": {
-    "freeQty": 50,
-    "minTotal": 0.87,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22809",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0174
-  },
   "0402WGF3301TCE": {
     "freeQty": 50,
     "minTotal": 1.07,
@@ -746,17 +735,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0214
-  },
-  "0805W8F5100T5E": {
-    "freeQty": 50,
-    "minTotal": 1.18,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17734",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0237
   },
   "0805W8F1004T5E": {
     "freeQty": 50,
@@ -791,17 +769,6 @@
     "split": 100,
     "productPrice": 0.0293
   },
-  "1206W4F1200T5E": {
-    "freeQty": 50,
-    "minTotal": 1.46,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "1206",
-    "productCode": "C17909",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0293
-  },
   "0805W8F2201T5E": {
     "freeQty": 50,
     "minTotal": 1.49,
@@ -813,16 +780,49 @@
     "split": 100,
     "productPrice": 0.0299
   },
+  "0805W8F1200T5E": {
+    "freeQty": 50,
+    "minTotal": 1.99,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17437",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0399
+  },
+  "0805W8F4702T5E": {
+    "freeQty": 50,
+    "minTotal": 2.06,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17713",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0412
+  },
   "0402WGF1502TCE": {
     "freeQty": 50,
-    "minTotal": 0.3,
+    "minTotal": 0.31,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25756",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.006
+    "productPrice": 0.0063
+  },
+  "0402WGF5100TCE": {
+    "freeQty": 50,
+    "minTotal": 0.33,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0402",
+    "productCode": "C25123",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0066
   },
   "0402WGF2202TCE": {
     "freeQty": 50,
@@ -835,17 +835,6 @@
     "split": 100,
     "productPrice": 0.0068
   },
-  "0402WGF5100TCE": {
-    "freeQty": 50,
-    "minTotal": 0.4,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C25123",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0081
-  },
   "0603WAF6802T5E": {
     "freeQty": 50,
     "minTotal": 0.46,
@@ -857,27 +846,16 @@
     "split": 100,
     "productPrice": 0.0093
   },
-  "0603WAF1002T5E": {
-    "freeQty": 0,
-    "minTotal": 0.96,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C25804",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0096
-  },
-  "0603WAF1503T5E": {
+  "0402WGF499JTCE": {
     "freeQty": 50,
-    "minTotal": 0.49,
+    "minTotal": 0.47,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22807",
+    "encapsulation": "0402",
+    "productCode": "C25120",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0098
+    "productPrice": 0.0095
   },
   "0402WGF2200TCE": {
     "freeQty": 50,
@@ -901,16 +879,16 @@
     "split": 100,
     "productPrice": 0.011
   },
-  "0402WGF3302TCE": {
+  "0603WAF200JT5E": {
     "freeQty": 50,
-    "minTotal": 0.57,
+    "minTotal": 0.6,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C25779",
+    "encapsulation": "0603",
+    "productCode": "C22950",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0115
+    "productPrice": 0.0121
   },
   "0603WAF5103T5E": {
     "freeQty": 50,
@@ -934,17 +912,6 @@
     "split": 100,
     "productPrice": 0.0123
   },
-  "0603WAF200KT5E": {
-    "freeQty": 50,
-    "minTotal": 0.66,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22977",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0132
-  },
   "0603WAF6801T5E": {
     "freeQty": 50,
     "minTotal": 0.7,
@@ -955,39 +922,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.014
-  },
-  "0603WAF2402T5E": {
-    "freeQty": 50,
-    "minTotal": 0.71,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23352",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0142
-  },
-  "0603WAF200JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.76,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22950",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0152
-  },
-  "0603WAF5602T5E": {
-    "freeQty": 50,
-    "minTotal": 0.82,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23206",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0164
   },
   "0402WGF2000TCE": {
     "freeQty": 50,
@@ -1000,13 +934,13 @@
     "split": 100,
     "productPrice": 0.0174
   },
-  "0603WAF1202T5E": {
+  "0603WAF100KT5E": {
     "freeQty": 50,
     "minTotal": 0.93,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C22790",
+    "productCode": "C22936",
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0186
@@ -1033,6 +967,17 @@
     "split": 100,
     "productPrice": 0.0206
   },
+  "0805W8F5100T5E": {
+    "freeQty": 50,
+    "minTotal": 1.18,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17734",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0237
+  },
   "0805W8F3301T5E": {
     "freeQty": 50,
     "minTotal": 1.28,
@@ -1044,39 +989,6 @@
     "split": 100,
     "productPrice": 0.0257
   },
-  "0805W8F510KT5E": {
-    "freeQty": 50,
-    "minTotal": 1.35,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17724",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0271
-  },
-  "0805W8F220JT5E": {
-    "freeQty": 50,
-    "minTotal": 1.38,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17561",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0276
-  },
-  "0805W8F2200T5E": {
-    "freeQty": 50,
-    "minTotal": 1.38,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17557",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0276
-  },
   "0805W8F3001T5E": {
     "freeQty": 50,
     "minTotal": 1.43,
@@ -1087,17 +999,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0287
-  },
-  "0805W8F4702T5E": {
-    "freeQty": 50,
-    "minTotal": 2.06,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17713",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0412
   },
   "0805W8F2000T5E": {
     "freeQty": 50,
@@ -1134,33 +1035,22 @@
   },
   "0603WAF1203T5E": {
     "freeQty": 50,
-    "minTotal": 0.44,
+    "minTotal": 0.47,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C25808",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0089
+    "productPrice": 0.0094
   },
-  "0603WAF3303T5E": {
-    "freeQty": 50,
-    "minTotal": 0.46,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23137",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0093
-  },
-  "0603WAF3900T5E": {
+  "0603WAF1503T5E": {
     "freeQty": 50,
     "minTotal": 0.49,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C23151",
+    "productCode": "C22807",
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0098
@@ -1198,16 +1088,27 @@
     "split": 100,
     "productPrice": 0.0111
   },
-  "0603WAF4991T5E": {
+  "0402WGF3302TCE": {
     "freeQty": 50,
-    "minTotal": 0.62,
+    "minTotal": 0.57,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0402",
+    "productCode": "C25779",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0115
+  },
+  "0603WAF3902T5E": {
+    "freeQty": 50,
+    "minTotal": 0.59,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C23046",
+    "productCode": "C23153",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0125
+    "productPrice": 0.0119
   },
   "0603WAF6800T5E": {
     "freeQty": 50,
@@ -1231,6 +1132,28 @@
     "split": 100,
     "productPrice": 0.0127
   },
+  "0603WAF200KT5E": {
+    "freeQty": 50,
+    "minTotal": 0.66,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22977",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0132
+  },
+  "0603WAF2402T5E": {
+    "freeQty": 50,
+    "minTotal": 0.71,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23352",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0142
+  },
   "0603WAF2004T5E": {
     "freeQty": 50,
     "minTotal": 0.76,
@@ -1253,6 +1176,39 @@
     "split": 100,
     "productPrice": 0.0155
   },
+  "0603WAF5602T5E": {
+    "freeQty": 50,
+    "minTotal": 0.82,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23206",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0164
+  },
+  "0603WAF1802T5E": {
+    "freeQty": 50,
+    "minTotal": 0.82,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C25810",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0165
+  },
+  "0603WAF2702T5E": {
+    "freeQty": 50,
+    "minTotal": 0.83,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22967",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0167
+  },
   "0805W8F1501T5E": {
     "freeQty": 50,
     "minTotal": 0.85,
@@ -1263,6 +1219,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.017
+  },
+  "0805W8F470JT5E": {
+    "freeQty": 50,
+    "minTotal": 0.85,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17714",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0171
   },
   "0603WAF4992T5E": {
     "freeQty": 50,
@@ -1275,39 +1242,6 @@
     "split": 100,
     "productPrice": 0.0172
   },
-  "0805W8F470JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.86,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17714",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0172
-  },
-  "0805W8F6801T5E": {
-    "freeQty": 50,
-    "minTotal": 0.87,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17772",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0174
-  },
-  "0805W8F510JT5E": {
-    "freeQty": 50,
-    "minTotal": 0.89,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17738",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0179
-  },
   "0603WAF4703T5E": {
     "freeQty": 50,
     "minTotal": 0.9,
@@ -1318,6 +1252,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0181
+  },
+  "0603WAF1202T5E": {
+    "freeQty": 50,
+    "minTotal": 0.93,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22790",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0186
   },
   "0603WAF5601T5E": {
     "freeQty": 50,
@@ -1352,6 +1297,39 @@
     "split": 100,
     "productPrice": 0.021
   },
+  "0805W8F510KT5E": {
+    "freeQty": 50,
+    "minTotal": 1.35,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17724",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0271
+  },
+  "0805W8F220JT5E": {
+    "freeQty": 50,
+    "minTotal": 1.38,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17561",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0276
+  },
+  "0805W8F2200T5E": {
+    "freeQty": 50,
+    "minTotal": 1.38,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17557",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0276
+  },
   "0805W8F330JT5E": {
     "freeQty": 50,
     "minTotal": 1.39,
@@ -1385,16 +1363,16 @@
     "split": 100,
     "productPrice": 0.0296
   },
-  "0805W8F5102T5E": {
+  "1206W4F1200T5E": {
     "freeQty": 50,
-    "minTotal": 2.03,
+    "minTotal": 1.48,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17737",
+    "encapsulation": "1206",
+    "productCode": "C17909",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0407
+    "productPrice": 0.0296
   },
   "1206W4F100LT5E": {
     "freeQty": 50,
@@ -1405,18 +1383,7 @@
     "productCode": "C25334",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0587
-  },
-  "0603WAF8200T5E": {
-    "freeQty": 50,
-    "minTotal": 0.43,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23253",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0087
+    "productPrice": 0.0495
   },
   "0603WAF2203T5E": {
     "freeQty": 50,
@@ -1429,6 +1396,28 @@
     "split": 100,
     "productPrice": 0.0089
   },
+  "0603WAF3303T5E": {
+    "freeQty": 50,
+    "minTotal": 0.46,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23137",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0093
+  },
+  "0603WAF3900T5E": {
+    "freeQty": 50,
+    "minTotal": 0.49,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23151",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0098
+  },
   "0603WAF3601T5E": {
     "freeQty": 50,
     "minTotal": 0.58,
@@ -1439,6 +1428,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0116
+  },
+  "0603WAF4991T5E": {
+    "freeQty": 50,
+    "minTotal": 0.62,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23046",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0125
   },
   "0603WAF1801T5E": {
     "freeQty": 50,
@@ -1462,27 +1462,16 @@
     "split": 100,
     "productPrice": 0.0128
   },
-  "0603WAF3902T5E": {
-    "freeQty": 50,
-    "minTotal": 0.67,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23153",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0134
-  },
   "0603WAF6201T5E": {
     "freeQty": 50,
-    "minTotal": 0.68,
+    "minTotal": 0.69,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
     "productCode": "C4260",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0137
+    "productPrice": 0.0138
   },
   "0603WAF1005T5E": {
     "freeQty": 50,
@@ -1494,17 +1483,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0141
-  },
-  "0805W8F8201T5E": {
-    "freeQty": 50,
-    "minTotal": 0.81,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17828",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0163
   },
   "0603WAF8202T5E": {
     "freeQty": 50,
@@ -1528,17 +1506,6 @@
     "split": 100,
     "productPrice": 0.0164
   },
-  "0603WAF1302T5E": {
-    "freeQty": 50,
-    "minTotal": 0.82,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22797",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0164
-  },
   "0805W8F1202T5E": {
     "freeQty": 50,
     "minTotal": 0.83,
@@ -1549,6 +1516,17 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0166
+  },
+  "0805W8F6801T5E": {
+    "freeQty": 50,
+    "minTotal": 0.84,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17772",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0168
   },
   "0603WAF9101T5E": {
     "freeQty": 50,
@@ -1561,17 +1539,6 @@
     "split": 100,
     "productPrice": 0.0185
   },
-  "0603WAF3003T5E": {
-    "freeQty": 50,
-    "minTotal": 1.14,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23024",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0228
-  },
   "0805W8F3002T5E": {
     "freeQty": 50,
     "minTotal": 1.42,
@@ -1583,6 +1550,17 @@
     "split": 100,
     "productPrice": 0.0285
   },
+  "0805W8F1503T5E": {
+    "freeQty": 50,
+    "minTotal": 1.46,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17470",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0293
+  },
   "0805W8F1201T5E": {
     "freeQty": 50,
     "minTotal": 1.49,
@@ -1593,28 +1571,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.0299
-  },
-  "0805W8F2701T5E": {
-    "freeQty": 50,
-    "minTotal": 1.66,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17530",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0333
-  },
-  "0805W8F100KT5E": {
-    "freeQty": 50,
-    "minTotal": 1.66,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C25271",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0333
   },
   "0805W8F6800T5E": {
     "freeQty": 50,
@@ -1649,17 +1605,6 @@
     "split": 100,
     "productPrice": 0.0358
   },
-  "0805W8F5601T5E": {
-    "freeQty": 50,
-    "minTotal": 1.89,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C4382",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0378
-  },
   "1206W4F220JT5E": {
     "freeQty": 50,
     "minTotal": 1.99,
@@ -1671,27 +1616,38 @@
     "split": 100,
     "productPrice": 0.0398
   },
-  "0603WAF2700T5E": {
+  "0805W8F5102T5E": {
     "freeQty": 50,
-    "minTotal": 0.61,
+    "minTotal": 2.03,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22966",
+    "encapsulation": "0805",
+    "productCode": "C17737",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0123
+    "productPrice": 0.0407
   },
-  "0603WAF3901T5E": {
+  "0603WAF8200T5E": {
     "freeQty": 50,
-    "minTotal": 0.7,
+    "minTotal": 0.43,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C23018",
+    "productCode": "C23253",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.014
+    "productPrice": 0.0087
+  },
+  "0805W8F8201T5E": {
+    "freeQty": 50,
+    "minTotal": 0.81,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17828",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0163
   },
   "0805W8F2401T5E": {
     "freeQty": 50,
@@ -1704,38 +1660,27 @@
     "split": 100,
     "productPrice": 0.0166
   },
-  "0603WAF2702T5E": {
+  "0805W8F510JT5E": {
     "freeQty": 50,
-    "minTotal": 1.41,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C22967",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0283
-  },
-  "1206W4F3000T5E": {
-    "freeQty": 50,
-    "minTotal": 1.45,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "1206",
-    "productCode": "C17887",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.029
-  },
-  "0805W8F1503T5E": {
-    "freeQty": 50,
-    "minTotal": 1.46,
+    "minTotal": 0.89,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
-    "productCode": "C17470",
+    "productCode": "C17738",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0293
+    "productPrice": 0.0179
+  },
+  "0603WAF3003T5E": {
+    "freeQty": 50,
+    "minTotal": 1.14,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C23024",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0229
   },
   "0805W8F499JT5E": {
     "freeQty": 50,
@@ -1748,16 +1693,38 @@
     "split": 100,
     "productPrice": 0.0297
   },
-  "0805W8F3000T5E": {
+  "0805W8F100KT5E": {
     "freeQty": 50,
-    "minTotal": 1.53,
+    "minTotal": 1.63,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
-    "productCode": "C17617",
+    "productCode": "C25271",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0306
+    "productPrice": 0.0327
+  },
+  "0805W8F2701T5E": {
+    "freeQty": 50,
+    "minTotal": 1.66,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17530",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0333
+  },
+  "0805W8F5601T5E": {
+    "freeQty": 50,
+    "minTotal": 1.89,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C4382",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0378
   },
   "0805W8F2702T5E": {
     "freeQty": 50,
@@ -1770,38 +1737,126 @@
     "split": 100,
     "productPrice": 0.0173
   },
-  "0805W8F1500T5E": {
+  "0805W8F3000T5E": {
     "freeQty": 50,
-    "minTotal": 0.87,
+    "minTotal": 1.53,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
-    "productCode": "C17471",
+    "productCode": "C17617",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0175
+    "productPrice": 0.0306
+  },
+  "1206W4F200JT5E": {
+    "freeQty": 30,
+    "minTotal": 4.68,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "1206",
+    "productCode": "C17955",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0668
+  },
+  "0603WAF1302T5E": {
+    "freeQty": 50,
+    "minTotal": 0.62,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C22797",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0124
+  },
+  "0805W8F3901T5E": {
+    "freeQty": 50,
+    "minTotal": 0.85,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17614",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0171
   },
   "0805W8F3302T5E": {
     "freeQty": 50,
-    "minTotal": 1.03,
+    "minTotal": 0.94,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
     "productCode": "C17633",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0207
+    "productPrice": 0.0189
   },
-  "0603WAF1802T5E": {
+  "1206W4F3000T5E": {
     "freeQty": 50,
-    "minTotal": 1.21,
+    "minTotal": 1.45,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "1206",
+    "productCode": "C17887",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.029
+  },
+  "0805W8F1500T5E": {
+    "freeQty": 50,
+    "minTotal": 0.85,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17471",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.017
+  },
+  "0805W8F2203T5E": {
+    "freeQty": 50,
+    "minTotal": 0.9,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17556",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.018
+  },
+  "0603WAF3901T5E": {
+    "freeQty": 50,
+    "minTotal": 0.63,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C25810",
+    "productCode": "C23018",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0242
+    "productPrice": 0.0126
+  },
+  "0603WAF510KT5E": {
+    "freeQty": 0,
+    "minTotal": 7.55,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603",
+    "productCode": "C25197",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0755
+  },
+  "0805W8F6802T5E": {
+    "freeQty": 50,
+    "minTotal": 0.87,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0805",
+    "productCode": "C17801",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0175
   },
   "0805W8F2402T5E": {
     "freeQty": 50,
@@ -1814,17 +1869,6 @@
     "split": 100,
     "productPrice": 0.0265
   },
-  "1206W4F200JT5E": {
-    "freeQty": 30,
-    "minTotal": 1.34,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "1206",
-    "productCode": "C17955",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0668
-  },
   "0805W8F4703T5E": {
     "freeQty": 50,
     "minTotal": 0.8,
@@ -1836,104 +1880,82 @@
     "split": 100,
     "productPrice": 0.0161
   },
-  "0805W8F6802T5E": {
+  "0603WAF2700T5E": {
     "freeQty": 50,
-    "minTotal": 0.95,
+    "minTotal": 0.58,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17801",
+    "encapsulation": "0603",
+    "productCode": "C22966",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0191
+    "productPrice": 0.0117
+  },
+  "0402WGF1002TCE": {
+    "freeQty": 0,
+    "minTotal": 1.3,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0402",
+    "productCode": "C25744",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.013
   },
   "0402WGF4700TCE": {
-    "freeQty": 0,
-    "minTotal": 0.68,
+    "freeQty": 50,
+    "minTotal": 0.45,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25117",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0068
-  },
-  "0603WAF470KT5E": {
-    "freeQty": 50,
-    "minTotal": 0.79,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C23164",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0158
+    "productPrice": 0.009
   },
   "0402WGF220JTCE": {
     "freeQty": 0,
-    "minTotal": 0.84,
+    "minTotal": 0.72,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25092",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0084
+    "productPrice": 0.0072
   },
-  "0402WGF1200TCE": {
-    "freeQty": 50,
-    "minTotal": 1.02,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0402",
-    "productCode": "C25079",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0205
-  },
-  "0805W8F2203T5E": {
-    "freeQty": 50,
-    "minTotal": 1.33,
+  "0805W8F220KT5E": {
+    "freeQty": 30,
+    "minTotal": 2.51,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0805",
-    "productCode": "C17556",
+    "productCode": "C17521",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0267
-  },
-  "0603WAF4702T5E": {
-    "freeQty": 0,
-    "minTotal": 2.12,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C25819",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0212
+    "productPrice": 0.0359
   },
   "0402WGF330JTCE": {
     "freeQty": 0,
-    "minTotal": 0.65,
+    "minTotal": 0.86,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0402",
     "productCode": "C25105",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0065
+    "productPrice": 0.0086
   },
-  "0603WAF100KT5E": {
+  "0603WAF470KT5E": {
     "freeQty": 0,
-    "minTotal": 1.59,
+    "minTotal": 1.46,
     "category": "贴片电阻",
     "brand": "UNI-ROYAL(厚声)",
     "encapsulation": "0603",
-    "productCode": "C22936",
+    "productCode": "C23164",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0159
+    "productPrice": 0.0146
   },
   "0603WAF220KT5E": {
     "freeQty": 0,
@@ -1946,6 +1968,17 @@
     "split": 100,
     "productPrice": 0.0202
   },
+  "0402WGF1200TCE": {
+    "freeQty": 0,
+    "minTotal": 2.05,
+    "category": "贴片电阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0402",
+    "productCode": "C25079",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0205
+  },
   "1206W4F100KT5E": {
     "freeQty": 0,
     "minTotal": 7.17,
@@ -1956,39 +1989,6 @@
     "needNumber": 50,
     "split": 50,
     "productPrice": 0.1434
-  },
-  "0805W8F220KT5E": {
-    "freeQty": 0,
-    "minTotal": 3.43,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17521",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0343
-  },
-  "0603WAF510KT5E": {
-    "freeQty": 0,
-    "minTotal": 3.78,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603",
-    "productCode": "C25197",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0755
-  },
-  "0805W8F3901T5E": {
-    "freeQty": 50,
-    "minTotal": 0.9,
-    "category": "贴片电阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0805",
-    "productCode": "C17614",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.018
   },
   "0805W8F470KT5E": {
     "freeQty": 0,
@@ -2001,82 +2001,71 @@
     "split": 50,
     "productPrice": 0.0937
   },
-  "CL10A105KB8NNNC": {
-    "freeQty": 20,
-    "minTotal": 2.67,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C15849",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0889
-  },
-  "CL10A106KP8NNNC": {
-    "freeQty": 5,
-    "minTotal": 2.49,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C19702",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.1658
-  },
   "CL21A106KAYNNNE": {
     "freeQty": 5,
-    "minTotal": 3.89,
+    "minTotal": 4.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
     "productCode": "C15850",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.2595
+    "productPrice": 0.2664
   },
-  "GRM21BR61H106KE43L": {
-    "freeQty": 4,
-    "minTotal": 1.27,
-    "category": "贴片电容(MLCC)",
-    "brand": "muRata(村田)",
-    "encapsulation": "0805",
-    "productCode": "C440198",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 1.2704
-  },
-  "CL31A106KBHNNNE": {
-    "freeQty": 0,
-    "minTotal": 14.53,
+  "CL10A106KP8NNNC": {
+    "freeQty": 5,
+    "minTotal": 1.93,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
-    "encapsulation": "1206",
-    "productCode": "C13585",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 1.4534
+    "encapsulation": "0603",
+    "productCode": "C19702",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.129
+  },
+  "CL05B104KO5NNNC": {
+    "freeQty": 50,
+    "minTotal": 0.94,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0402",
+    "productCode": "C1525",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0189
   },
   "CL05A105KA5NQNC": {
     "freeQty": 30,
-    "minTotal": 2.96,
+    "minTotal": 2.71,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0402",
     "productCode": "C52923",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0423
+    "productPrice": 0.0387
   },
   "CL05B104KB54PNC": {
     "freeQty": 30,
-    "minTotal": 4.03,
+    "minTotal": 3.81,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0402",
     "productCode": "C307331",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0576
+    "productPrice": 0.0544
+  },
+  "CL21B104KCFNNNE": {
+    "freeQty": 5,
+    "minTotal": 5.45,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C28233",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.1209
   },
   "CL05A106MQ5NUNC": {
     "freeQty": 20,
@@ -2089,27 +2078,38 @@
     "split": 100,
     "productPrice": 0.1565
   },
+  "CL10A106MA8NRNC": {
+    "freeQty": 5,
+    "minTotal": 3.34,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C96446",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.2225
+  },
+  "CL21B105KBFNNNE": {
+    "freeQty": 5,
+    "minTotal": 1.28,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C28323",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.2573
+  },
   "CL21A226MAQNNNE": {
     "freeQty": 4,
-    "minTotal": 18.69,
+    "minTotal": 18.52,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
     "productCode": "C45783",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 1.1682
-  },
-  "CL05B103KB5NNNC": {
-    "freeQty": 50,
-    "minTotal": 1.18,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0402",
-    "productCode": "C15195",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0237
+    "productPrice": 1.1574
   },
   "CL10B102KB8NNNC": {
     "freeQty": 50,
@@ -2122,6 +2122,28 @@
     "split": 50,
     "productPrice": 0.0595
   },
+  "GRM21BR61H106KE43L": {
+    "freeQty": 4,
+    "minTotal": 1.18,
+    "category": "贴片电容(MLCC)",
+    "brand": "muRata(村田)",
+    "encapsulation": "0805",
+    "productCode": "C440198",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 1.1818
+  },
+  "CL05B103KB5NNNC": {
+    "freeQty": 50,
+    "minTotal": 1.18,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0402",
+    "productCode": "C15195",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0237
+  },
   "CL10C101JB8NNNC": {
     "freeQty": 50,
     "minTotal": 0.0,
@@ -2131,18 +2153,40 @@
     "productCode": "C14858",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0526
+    "productPrice": 0.05
+  },
+  "CL10A225KO8NNNC": {
+    "freeQty": 20,
+    "minTotal": 2.17,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C23630",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0721
   },
   "CL05A475MP5NRNC": {
     "freeQty": 20,
-    "minTotal": 2.8,
+    "minTotal": 2.76,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0402",
     "productCode": "C23733",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0931
+    "productPrice": 0.0917
+  },
+  "CL10A475KO8NNNC": {
+    "freeQty": 5,
+    "minTotal": 0.51,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C19666",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.1033
   },
   "CL10A226MQ8NRNC": {
     "freeQty": 5,
@@ -2155,214 +2199,16 @@
     "split": 20,
     "productPrice": 0.191
   },
-  "CL31A226KAHNNNE": {
+  "CL31A106KBHNNNE": {
     "freeQty": 4,
-    "minTotal": 11.38,
+    "minTotal": 7.74,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "1206",
-    "productCode": "C12891",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.7115
-  },
-  "CL31B105KBHNNNE": {
-    "freeQty": 5,
-    "minTotal": 1.9,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "1206",
-    "productCode": "C1848",
+    "productCode": "C13585",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.3787
-  },
-  "CL21A476MQYNNNE": {
-    "freeQty": 5,
-    "minTotal": 3.11,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C16780",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.6219
-  },
-  "CL05A225MQ5NSNC": {
-    "freeQty": 50,
-    "minTotal": 1.62,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0402",
-    "productCode": "C12530",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0325
-  },
-  "0603B103K500NT": {
-    "freeQty": 30,
-    "minTotal": 4.62,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0603",
-    "productCode": "C57112",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.066
-  },
-  "1206B102K202NT": {
-    "freeQty": 20,
-    "minTotal": 1.39,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "1206",
-    "productCode": "C9196",
-    "needNumber": 30,
-    "split": 30,
-    "productPrice": 0.1386
-  },
-  "CC0603KRX7R9BB104": {
-    "freeQty": 30,
-    "minTotal": 1.03,
-    "category": "贴片电容(MLCC)",
-    "brand": "YAGEO(国巨)",
-    "encapsulation": "0603",
-    "productCode": "C14663",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0511
-  },
-  "CL10C200JB8NNNC": {
-    "freeQty": 50,
-    "minTotal": 2.73,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C1648",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0547
-  },
-  "CL10B474KA8NNNC": {
-    "freeQty": 5,
-    "minTotal": 3.56,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C1623",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0789
-  },
-  "CL21A225KBQNNNE": {
-    "freeQty": 5,
-    "minTotal": 1.68,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C377773",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.3345
-  },
-  "CL05B104KO5NNNC": {
-    "freeQty": 50,
-    "minTotal": 1.06,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0402",
-    "productCode": "C1525",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0212
-  },
-  "CL05B224KO5NNNC": {
-    "freeQty": 50,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0402",
-    "productCode": "C16772",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0299
-  },
-  "CL21B102KBCNNNC": {
-    "freeQty": 20,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C46653",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.0895
-  },
-  "CC0805KRX7R9BB104": {
-    "freeQty": 20,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "YAGEO(国巨)",
-    "encapsulation": "0805",
-    "productCode": "C49678",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.125
-  },
-  "CL10A225KO8NNNC": {
-    "freeQty": 20,
-    "minTotal": 2.27,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C23630",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0758
-  },
-  "CL21B224KBFNNNE": {
-    "freeQty": 20,
-    "minTotal": 2.81,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C5378",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0935
-  },
-  "CL31A107MQHNNNE": {
-    "freeQty": 5,
-    "minTotal": 3.79,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "1206",
-    "productCode": "C15008",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.7575
-  },
-  "CL10A475KO8NNNC": {
-    "freeQty": 5,
-    "minTotal": 0.56,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C19666",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.1108
-  },
-  "CL31B104KBCNNNC": {
-    "freeQty": 20,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "1206",
-    "productCode": "C24497",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.1345
+    "productPrice": 1.2886
   },
   "CL21A475KAQNNNE": {
     "freeQty": 5,
@@ -2375,27 +2221,203 @@
     "split": 20,
     "productPrice": 0.2094
   },
+  "CL21A225KBQNNNE": {
+    "freeQty": 5,
+    "minTotal": 1.68,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C377773",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.3345
+  },
+  "CL21A476MQYNNNE": {
+    "freeQty": 5,
+    "minTotal": 3.11,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C16780",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.6219
+  },
+  "CL31A107MQHNNNE": {
+    "freeQty": 5,
+    "minTotal": 3.33,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "1206",
+    "productCode": "C15008",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.6658
+  },
+  "CL31A476MPHNNNE": {
+    "freeQty": 4,
+    "minTotal": 1.04,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "1206",
+    "productCode": "C96123",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 1.0442
+  },
   "CL10C220JB8NNNC": {
     "freeQty": 50,
-    "minTotal": 1.8,
+    "minTotal": 0.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
     "productCode": "C1653",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0539
+  },
+  "CL31B105KBHNNNE": {
+    "freeQty": 5,
+    "minTotal": 1.9,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "1206",
+    "productCode": "C1848",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.3787
+  },
+  "CL31A226KAHNNNE": {
+    "freeQty": 4,
+    "minTotal": 11.5,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "1206",
+    "productCode": "C12891",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.719
+  },
+  "CL05A225MQ5NSNC": {
+    "freeQty": 50,
+    "minTotal": 1.62,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0402",
+    "productCode": "C12530",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0361
+    "productPrice": 0.0325
   },
-  "CL10B221KB8NNNC": {
+  "CL10C200JB8NNNC": {
     "freeQty": 50,
-    "minTotal": 2.18,
+    "minTotal": 2.09,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
-    "productCode": "C1603",
+    "productCode": "C1648",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0436
+    "productPrice": 0.0419
+  },
+  "1206B102K202NT": {
+    "freeQty": 20,
+    "minTotal": 1.39,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "1206",
+    "productCode": "C9196",
+    "needNumber": 30,
+    "split": 30,
+    "productPrice": 0.1386
+  },
+  "CC0805KRX7R9BB104": {
+    "freeQty": 20,
+    "minTotal": 0.0,
+    "category": "贴片电容(MLCC)",
+    "brand": "YAGEO(国巨)",
+    "encapsulation": "0805",
+    "productCode": "C49678",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.125
+  },
+  "1206B475K500NT": {
+    "freeQty": 4,
+    "minTotal": 2.56,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "1206",
+    "productCode": "C29823",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.4256
+  },
+  "CL21B102KBCNNNC": {
+    "freeQty": 20,
+    "minTotal": 0.0,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C46653",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.079
+  },
+  "CL21B474KBFNNNE": {
+    "freeQty": 20,
+    "minTotal": 0.0,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C13967",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.1257
+  },
+  "CL05B224KO5NNNC": {
+    "freeQty": 50,
+    "minTotal": 0.0,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0402",
+    "productCode": "C16772",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0297
+  },
+  "CL21B224KBFNNNE": {
+    "freeQty": 20,
+    "minTotal": 2.59,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0805",
+    "productCode": "C5378",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0862
+  },
+  "CL31B225KBHNNNE": {
+    "freeQty": 5,
+    "minTotal": 1.95,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "1206",
+    "productCode": "C50254",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.3887
+  },
+  "CL10B473KB8NNNC": {
+    "freeQty": 50,
+    "minTotal": 1.77,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C1622",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0354
   },
   "CL10C330JB8NNNC": {
     "freeQty": 50,
@@ -2406,7 +2428,7 @@
     "productCode": "C1663",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0546
+    "productPrice": 0.0551
   },
   "CL10C150JB8NNNC": {
     "freeQty": 30,
@@ -2419,17 +2441,6 @@
     "split": 50,
     "productPrice": 0.0675
   },
-  "CL31B225KBHNNNE": {
-    "freeQty": 5,
-    "minTotal": 2.27,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "1206",
-    "productCode": "C50254",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.4537
-  },
   "0402CG120J500NT": {
     "freeQty": 50,
     "minTotal": 0.85,
@@ -2441,49 +2452,49 @@
     "split": 100,
     "productPrice": 0.0171
   },
-  "CL10C100JB8NNNC": {
+  "CL10B223KB8NNNC": {
     "freeQty": 50,
-    "minTotal": 1.83,
+    "minTotal": 0.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
-    "productCode": "C1634",
+    "productCode": "C21122",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0346
+  },
+  "CL10B221KB8NNNC": {
+    "freeQty": 50,
+    "minTotal": 2.18,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C1603",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0366
+    "productPrice": 0.0436
   },
-  "1206B475K500NT": {
-    "freeQty": 4,
-    "minTotal": 2.92,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "1206",
-    "productCode": "C29823",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.486
-  },
-  "CL31A476MPHNNNE": {
-    "freeQty": 0,
-    "minTotal": 4.76,
+  "CL31B104KBCNNNC": {
+    "freeQty": 20,
+    "minTotal": 0.0,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "1206",
-    "productCode": "C96123",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 0.9521
+    "productCode": "C24497",
+    "needNumber": 20,
+    "split": 20,
+    "productPrice": 0.0904
   },
   "0402CG101J500NT": {
     "freeQty": 50,
-    "minTotal": 1.0,
+    "minTotal": 0.89,
     "category": "贴片电容(MLCC)",
     "brand": "FH(风华)",
     "encapsulation": "0402",
     "productCode": "C1546",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0201
+    "productPrice": 0.0178
   },
   "CL05C100JB5NNNC": {
     "freeQty": 50,
@@ -2494,7 +2505,7 @@
     "productCode": "C32949",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.037
+    "productPrice": 0.0348
   },
   "CL10C470JB8NNNC": {
     "freeQty": 50,
@@ -2518,38 +2529,60 @@
     "split": 50,
     "productPrice": 0.0565
   },
-  "0402CG220J500NT": {
-    "freeQty": 50,
-    "minTotal": 0.79,
+  "CC0603KRX7R9BB104": {
+    "freeQty": 30,
+    "minTotal": 2.85,
     "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1555",
+    "brand": "YAGEO(国巨)",
+    "encapsulation": "0603",
+    "productCode": "C14663",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0158
-  },
-  "0603B472K500NT": {
-    "freeQty": 50,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0603",
-    "productCode": "C53987",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0335
+    "productPrice": 0.0407
   },
   "CL10B333KB8NNNC": {
     "freeQty": 30,
-    "minTotal": 1.3,
+    "minTotal": 1.66,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0603",
     "productCode": "C21117",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0652
+    "productPrice": 0.0827
+  },
+  "0402B221K500NT": {
+    "freeQty": 50,
+    "minTotal": 0.7,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1530",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.013959
+  },
+  "0402CG220J500NT": {
+    "freeQty": 50,
+    "minTotal": 0.73,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1555",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0146
+  },
+  "0805B471K500NT": {
+    "freeQty": 30,
+    "minTotal": 3.16,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0805",
+    "productCode": "C1743",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.045144
   },
   "CL21C220JBANNNC": {
     "freeQty": 30,
@@ -2573,16 +2606,71 @@
     "split": 50,
     "productPrice": 0.1099
   },
-  "CL21C222JBFNNNE": {
-    "freeQty": 5,
-    "minTotal": 1.02,
+  "0603B472K500NT": {
+    "freeQty": 50,
+    "minTotal": 0.0,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0603",
+    "productCode": "C53987",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0303
+  },
+  "CC0805KRX7R9BB221": {
+    "freeQty": 30,
+    "minTotal": 2.62,
+    "category": "贴片电容(MLCC)",
+    "brand": "YAGEO(国巨)",
+    "encapsulation": "0805",
+    "productCode": "C107145",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0374
+  },
+  "CL21B103KBANNNC": {
+    "freeQty": 0,
+    "minTotal": 2.7,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
-    "productCode": "C28260",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.2051
+    "productCode": "C1710",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0539
+  },
+  "0603B222K500NT": {
+    "freeQty": 30,
+    "minTotal": 1.33,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0603",
+    "productCode": "C1604",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0663
+  },
+  "0402CG180J500NT": {
+    "freeQty": 50,
+    "minTotal": 0.54,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1549",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0108
+  },
+  "0402CG150J500NT": {
+    "freeQty": 50,
+    "minTotal": 0.76,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1548",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0153
   },
   "0402CG330J500NT": {
     "freeQty": 50,
@@ -2595,49 +2683,16 @@
     "split": 100,
     "productPrice": 0.0192
   },
-  "CL10B223KB8NNNC": {
+  "0402B472K500NT": {
     "freeQty": 50,
-    "minTotal": 0.0,
+    "minTotal": 1.15,
     "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C21122",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0428
-  },
-  "CC0805KRX7R9BB221": {
-    "freeQty": 30,
-    "minTotal": 3.15,
-    "category": "贴片电容(MLCC)",
-    "brand": "YAGEO(国巨)",
-    "encapsulation": "0805",
-    "productCode": "C107145",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1538",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.045
-  },
-  "CL21B105KBFNNNE": {
-    "freeQty": 0,
-    "minTotal": 1.91,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C28323",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.1913
-  },
-  "CL10A106MA8NRNC": {
-    "freeQty": 5,
-    "minTotal": 4.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C96446",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.2672
+    "productPrice": 0.023
   },
   "0603B471K500NT": {
     "freeQty": 50,
@@ -2661,50 +2716,6 @@
     "split": 100,
     "productPrice": 0.0512
   },
-  "0603B222K500NT": {
-    "freeQty": 30,
-    "minTotal": 1.33,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0603",
-    "productCode": "C1604",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0663
-  },
-  "0402B221K500NT": {
-    "freeQty": 50,
-    "minTotal": 0.7,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1530",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.013959
-  },
-  "0402B472K500NT": {
-    "freeQty": 50,
-    "minTotal": 1.15,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1538",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.023
-  },
-  "CL21B103KBANNNC": {
-    "freeQty": 0,
-    "minTotal": 2.81,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C1710",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0561
-  },
   "CL10B332KB8NNNC": {
     "freeQty": 50,
     "minTotal": 0.0,
@@ -2714,18 +2725,7 @@
     "productCode": "C1613",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.0795
-  },
-  "0603B682K500NT": {
-    "freeQty": 50,
-    "minTotal": 1.67,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0603",
-    "productCode": "C1631",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0334
+    "productPrice": 0.0779
   },
   "0805B472K500NT": {
     "freeQty": 30,
@@ -2738,27 +2738,27 @@
     "split": 50,
     "productPrice": 0.0655
   },
-  "CL21B474KBFNNNE": {
-    "freeQty": 20,
-    "minTotal": 0.0,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C13967",
-    "needNumber": 20,
-    "split": 20,
-    "productPrice": 0.1236
-  },
-  "0402CG150J500NT": {
+  "0402CG200J500NT": {
     "freeQty": 50,
-    "minTotal": 1.15,
+    "minTotal": 0.62,
     "category": "贴片电容(MLCC)",
     "brand": "FH(风华)",
     "encapsulation": "0402",
-    "productCode": "C1548",
+    "productCode": "C1554",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.023
+    "productPrice": 0.0125
+  },
+  "0402CG470J500NT": {
+    "freeQty": 50,
+    "minTotal": 1.33,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1567",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0266
   },
   "0402B223K500NT": {
     "freeQty": 30,
@@ -2771,27 +2771,16 @@
     "split": 100,
     "productPrice": 0.0294
   },
-  "0402B102K500NT": {
-    "freeQty": 50,
-    "minTotal": 1.16,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1523",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0232
-  },
-  "0805B471K500NT": {
+  "CL10C180JB8NNNC": {
     "freeQty": 30,
-    "minTotal": 3.16,
+    "minTotal": 1.67,
     "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0805",
-    "productCode": "C1743",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.045144
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C1647",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0836
   },
   "1206B103K500NT": {
     "freeQty": 20,
@@ -2804,104 +2793,49 @@
     "split": 20,
     "productPrice": 0.1202
   },
-  "0402CG470J500NT": {
-    "freeQty": 50,
-    "minTotal": 2.4,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1567",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.048
-  },
-  "CL10B473KB8NNNC": {
-    "freeQty": 50,
-    "minTotal": 2.34,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C1622",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0468
-  },
-  "0402CG200J500NT": {
-    "freeQty": 50,
-    "minTotal": 0.78,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1554",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0157
-  },
-  "CL21C101JBANNNC": {
-    "freeQty": 50,
-    "minTotal": 0.0,
+  "CL21C222JBFNNNE": {
+    "freeQty": 5,
+    "minTotal": 1.02,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
-    "productCode": "C1790",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0613
+    "productCode": "C28260",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.2051
   },
-  "0603B151K500NT": {
+  "0603CG300J500NT": {
     "freeQty": 50,
-    "minTotal": 2.08,
+    "minTotal": 1.53,
     "category": "贴片电容(MLCC)",
     "brand": "FH(风华)",
     "encapsulation": "0603",
-    "productCode": "C1594",
+    "productCode": "C1658",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0416
+    "productPrice": 0.0306
   },
-  "CL21B104KCFNNNE": {
+  "0603B682K500NT": {
+    "freeQty": 50,
+    "minTotal": 1.67,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0603",
+    "productCode": "C1631",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0334
+  },
+  "CL10A105KB8NNNC": {
     "freeQty": 0,
-    "minTotal": 7.27,
+    "minTotal": 4.33,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C28233",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.1454
-  },
-  "CL21B473KBCNNNC": {
-    "freeQty": 20,
-    "minTotal": 3.18,
-    "category": "贴片电容(MLCC)",
-    "brand": "SAMSUNG(三星)",
-    "encapsulation": "0805",
-    "productCode": "C53134",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.106
-  },
-  "0402CG180J500NT": {
-    "freeQty": 50,
-    "minTotal": 0.81,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
-    "encapsulation": "0402",
-    "productCode": "C1549",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0162
-  },
-  "0603B822K500NT": {
-    "freeQty": 50,
-    "minTotal": 1.79,
-    "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
     "encapsulation": "0603",
-    "productCode": "C1322360",
-    "needNumber": 100,
-    "split": 100,
-    "productPrice": 0.0358
+    "productCode": "C15849",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0866
   },
   "CL21C470JBANNNC": {
     "freeQty": 30,
@@ -2912,18 +2846,73 @@
     "productCode": "C14857",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.0497
+    "productPrice": 0.0618
   },
-  "0603CG300J500NT": {
-    "freeQty": 50,
-    "minTotal": 2.14,
+  "0603B103K500NT": {
+    "freeQty": 0,
+    "minTotal": 2.94,
     "category": "贴片电容(MLCC)",
     "brand": "FH(风华)",
     "encapsulation": "0603",
-    "productCode": "C1658",
+    "productCode": "C57112",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0588
+  },
+  "CL10B474KA8NNNC": {
+    "freeQty": 0,
+    "minTotal": 3.95,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C1623",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0789
+  },
+  "CL10C100JB8NNNC": {
+    "freeQty": 0,
+    "minTotal": 3.64,
+    "category": "贴片电容(MLCC)",
+    "brand": "SAMSUNG(三星)",
+    "encapsulation": "0603",
+    "productCode": "C1634",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.0429
+    "productPrice": 0.0364
+  },
+  "0603B151K500NT": {
+    "freeQty": 50,
+    "minTotal": 2.1,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0603",
+    "productCode": "C1594",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.042
+  },
+  "0402B102K500NT": {
+    "freeQty": 0,
+    "minTotal": 2.19,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0402",
+    "productCode": "C1523",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0219
+  },
+  "0805B333K500NT": {
+    "freeQty": 30,
+    "minTotal": 1.28,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0805",
+    "productCode": "C1739",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0639
   },
   "CL10C120JB8NNNC": {
     "freeQty": 0,
@@ -2936,38 +2925,49 @@
     "split": 50,
     "productPrice": 0.0683
   },
-  "CL10C180JB8NNNC": {
+  "0603B822K500NT": {
+    "freeQty": 50,
+    "minTotal": 1.79,
+    "category": "贴片电容(MLCC)",
+    "brand": "FH(风华)",
+    "encapsulation": "0603",
+    "productCode": "C1322360",
+    "needNumber": 100,
+    "split": 100,
+    "productPrice": 0.0358
+  },
+  "CL21C101JBANNNC": {
     "freeQty": 0,
-    "minTotal": 3.63,
+    "minTotal": 2.97,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
-    "encapsulation": "0603",
-    "productCode": "C1647",
+    "encapsulation": "0805",
+    "productCode": "C1790",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0726
+    "productPrice": 0.0593
   },
   "CL21C200JBANNNC": {
     "freeQty": 0,
-    "minTotal": 1.77,
+    "minTotal": 1.92,
     "category": "贴片电容(MLCC)",
     "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
     "productCode": "C1798",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.0887
+    "productPrice": 0.0961
   },
-  "0805B333K500NT": {
-    "freeQty": 30,
-    "minTotal": 1.39,
+  "CL21B473KBCNNNC": {
+    "freeQty": 0,
+    "minTotal": 5.3,
     "category": "贴片电容(MLCC)",
-    "brand": "FH(风华)",
+    "brand": "SAMSUNG(三星)",
     "encapsulation": "0805",
-    "productCode": "C1739",
+    "productCode": "C53134",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0691
+    "productPrice": 0.106
   },
   "S8050 J3Y(RANGE:200-350)": {
     "freeQty": 5,
@@ -2993,47 +2993,47 @@
   },
   "MMBT5551(RANGE:200-300)": {
     "freeQty": 5,
-    "minTotal": 4.06,
+    "minTotal": 4.03,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C2145",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0902
+    "productPrice": 0.0895
   },
   "MMBT3904(RANGE:100-300)": {
     "freeQty": 5,
-    "minTotal": 3.19,
+    "minTotal": 3.2,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C20526",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0707
-  },
-  "S9013 J3(RANGE:200-350)": {
-    "freeQty": 5,
-    "minTotal": 4.05,
-    "category": "三极管(BJT)",
-    "brand": "CJ(江苏长电/长晶)",
-    "encapsulation": "SOT-23",
-    "productCode": "C6749",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0899
+    "productPrice": 0.0709
   },
   "SS8550 Y2(RANGE:200-350)": {
     "freeQty": 5,
-    "minTotal": 4.1,
+    "minTotal": 4.04,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C8542",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0912
+    "productPrice": 0.0897
+  },
+  "S9013 J3(RANGE:200-350)": {
+    "freeQty": 5,
+    "minTotal": 4.01,
+    "category": "三极管(BJT)",
+    "brand": "CJ(江苏长电/长晶)",
+    "encapsulation": "SOT-23",
+    "productCode": "C6749",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0891
   },
   "MMBT5401(RANGE:200-300)": {
     "freeQty": 5,
@@ -3055,62 +3055,62 @@
     "productCode": "C9634",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.3891
+    "productPrice": 0.388
   },
   "MMBT2222A 1P": {
     "freeQty": 5,
-    "minTotal": 4.97,
+    "minTotal": 4.99,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C8512",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.1104
+    "productPrice": 0.1107
   },
   "S8550(RANGE:120-200)": {
     "freeQty": 5,
-    "minTotal": 4.7,
+    "minTotal": 4.79,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C105432",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.1044
+    "productPrice": 0.1064
   },
   "S9012 2T1(RANGE:200-350)": {
     "freeQty": 5,
-    "minTotal": 5.33,
+    "minTotal": 4.63,
     "category": "三极管(BJT)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C8543",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.1184
+    "productPrice": 0.1027
   },
-  "SS54": {
+  "1N5819WS": {
     "freeQty": 5,
-    "minTotal": 1.36,
+    "minTotal": 3.22,
     "category": "肖特基二极管",
-    "brand": "MDD(辰达半导体)",
-    "encapsulation": "SMA(DO-214AC)",
-    "productCode": "C22452",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.2719
+    "brand": "HKT(合科泰)",
+    "encapsulation": "SOD-323",
+    "productCode": "C191023",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.07163
   },
   "SS14": {
     "freeQty": 5,
-    "minTotal": 5.08,
+    "minTotal": 5.03,
     "category": "肖特基二极管",
     "brand": "MDD(辰达半导体)",
     "encapsulation": "SMA(DO-214AC)",
     "productCode": "C2480",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.113005
+    "productPrice": 0.11184
   },
   "SS34": {
     "freeQty": 5,
@@ -3123,104 +3123,104 @@
     "split": 20,
     "productPrice": 0.2138
   },
-  "1N5819WS": {
+  "SS54": {
     "freeQty": 5,
-    "minTotal": 3.21,
+    "minTotal": 1.36,
     "category": "肖特基二极管",
-    "brand": "HKT(合科泰)",
-    "encapsulation": "SOD-323",
-    "productCode": "C191023",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.07144
+    "brand": "MDD(辰达半导体)",
+    "encapsulation": "SMA(DO-214AC)",
+    "productCode": "C22452",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.2719
   },
   "SS210": {
     "freeQty": 5,
-    "minTotal": 8.63,
+    "minTotal": 8.53,
     "category": "肖特基二极管",
     "brand": "MDD(辰达半导体)",
     "encapsulation": "SMA(DO-214AC)",
     "productCode": "C14996",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.191769
+    "productPrice": 0.189696
   },
   "B5819W SL": {
     "freeQty": 5,
-    "minTotal": 2.43,
+    "minTotal": 2.39,
     "category": "肖特基二极管",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOD-123",
     "productCode": "C8598",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.162
-  },
-  "AMS1117-3.3": {
-    "freeQty": 2,
-    "minTotal": 3.75,
-    "category": "线性稳压器(LDO)",
-    "brand": "Advanced Monolithic Systems",
-    "encapsulation": "SOT-223",
-    "productCode": "C6186",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 1.2509
-  },
-  "HT7533-1": {
-    "freeQty": 2,
-    "minTotal": 2.66,
-    "category": "线性稳压器(LDO)",
-    "brand": "HOLTEK(合泰/盛群)",
-    "encapsulation": "SOT-89-3",
-    "productCode": "C14289",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 0.886
+    "productPrice": 0.1597
   },
   "L78M05ABDT-TR": {
     "freeQty": 2,
-    "minTotal": 3.77,
+    "minTotal": 3.79,
     "category": "线性稳压器(LDO)",
     "brand": "ST(意法半导体)",
     "encapsulation": "TO-252-2(DPAK)",
     "productCode": "C58069",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.2585
+    "productPrice": 1.2616
   },
-  "XC6206P332MR-G": {
+  "AMS1117-3.3": {
     "freeQty": 2,
-    "minTotal": 2.67,
+    "minTotal": 3.77,
     "category": "线性稳压器(LDO)",
-    "brand": "TOREX(特瑞仕)",
-    "encapsulation": "SOT-23-3L",
-    "productCode": "C5446",
+    "brand": "Advanced Monolithic Systems",
+    "encapsulation": "SOT-223",
+    "productCode": "C6186",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.8874
+    "productPrice": 1.2589
   },
-  "78L05G-AB3-R": {
+  "HT7533-1": {
     "freeQty": 2,
-    "minTotal": 1.65,
+    "minTotal": 2.65,
     "category": "线性稳压器(LDO)",
-    "brand": "UTC(友顺)",
+    "brand": "HOLTEK(合泰/盛群)",
     "encapsulation": "SOT-89-3",
-    "productCode": "C71136",
+    "productCode": "C14289",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.5494
+    "productPrice": 0.884
   },
   "AMS1117-5.0": {
     "freeQty": 2,
-    "minTotal": 4.69,
+    "minTotal": 4.71,
     "category": "线性稳压器(LDO)",
     "brand": "Advanced Monolithic Systems",
     "encapsulation": "SOT-223",
     "productCode": "C6187",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.5633
+    "productPrice": 1.5725
+  },
+  "XC6206P332MR-G": {
+    "freeQty": 2,
+    "minTotal": 2.7,
+    "category": "线性稳压器(LDO)",
+    "brand": "TOREX(特瑞仕)",
+    "encapsulation": "SOT-23-3L",
+    "productCode": "C5446",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 0.9027
+  },
+  "78L05G-AB3-R": {
+    "freeQty": 2,
+    "minTotal": 1.46,
+    "category": "线性稳压器(LDO)",
+    "brand": "UTC(友顺)",
+    "encapsulation": "SOT-89-3",
+    "productCode": "C71136",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 0.4865
   },
   "NCD0805R1": {
     "freeQty": 5,
@@ -3290,14 +3290,25 @@
   },
   "Q13FC13500004": {
     "freeQty": 2,
-    "minTotal": 3.13,
+    "minTotal": 3.15,
     "category": "无源晶振",
     "brand": "EPSON(爱普生)",
     "encapsulation": "SMD3215-2P",
     "productCode": "C32346",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.0441
+    "productPrice": 1.0472
+  },
+  "X50328MSB2GI": {
+    "freeQty": 2,
+    "minTotal": 12.03,
+    "category": "无源晶振",
+    "brand": "YXC(扬兴晶振)",
+    "encapsulation": "SMD5032-2P",
+    "productCode": "C115962",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 1.5043
   },
   "X322525MOB4SI": {
     "freeQty": 2,
@@ -3309,17 +3320,6 @@
     "needNumber": 5,
     "split": 5,
     "productPrice": 0.5811
-  },
-  "X50328MSB2GI": {
-    "freeQty": 2,
-    "minTotal": 12.03,
-    "category": "无源晶振",
-    "brand": "YXC(扬兴晶振)",
-    "encapsulation": "SMD5032-2P",
-    "productCode": "C115962",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 1.5044
   },
   "X322512MSB4SI": {
     "freeQty": 2,
@@ -3341,7 +3341,7 @@
     "productCode": "C13738",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.5706
+    "productPrice": 0.5705
   },
   "X49SM8MSD2SC": {
     "freeQty": 2,
@@ -3356,25 +3356,25 @@
   },
   "BAV99,215": {
     "freeQty": 5,
-    "minTotal": 3.23,
+    "minTotal": 3.04,
     "category": "开关二极管",
     "brand": "Nexperia(安世)",
     "encapsulation": "SOT-23",
     "productCode": "C2500",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0717
+    "productPrice": 0.0676
   },
   "1N4148WS": {
     "freeQty": 5,
-    "minTotal": 3.8,
+    "minTotal": 3.27,
     "category": "开关二极管",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOD-323",
     "productCode": "C2128",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0843
+    "productPrice": 0.0725
   },
   "1N4148W": {
     "freeQty": 5,
@@ -3389,25 +3389,36 @@
   },
   "BAV70": {
     "freeQty": 5,
-    "minTotal": 4.19,
+    "minTotal": 4.18,
     "category": "开关二极管",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C68978",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0931
+    "productPrice": 0.0928
   },
   "2N7002": {
     "freeQty": 3,
-    "minTotal": 4.61,
+    "minTotal": 4.74,
     "category": "场效应管(MOSFET)",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C8545",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.0979
+    "productPrice": 0.1008
+  },
+  "AO3400A": {
+    "freeQty": 3,
+    "minTotal": 1.09,
+    "category": "场效应管(MOSFET)",
+    "brand": "AOS",
+    "encapsulation": "SOT-23",
+    "productCode": "C20917",
+    "needNumber": 5,
+    "split": 5,
+    "productPrice": 0.543
   },
   "AO3401A": {
     "freeQty": 3,
@@ -3422,25 +3433,14 @@
   },
   "SI2301CDS-T1-GE3": {
     "freeQty": 3,
-    "minTotal": 4.01,
+    "minTotal": 4.24,
     "category": "场效应管(MOSFET)",
     "brand": "VISHAY(威世)",
     "encapsulation": "SOT-23",
     "productCode": "C10487",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.5731
-  },
-  "AO3400A": {
-    "freeQty": 3,
-    "minTotal": 1.09,
-    "category": "场效应管(MOSFET)",
-    "brand": "AOS",
-    "encapsulation": "SOT-23",
-    "productCode": "C20917",
-    "needNumber": 5,
-    "split": 5,
-    "productPrice": 0.543
+    "productPrice": 0.6058
   },
   "4D03WGJ0103T5E": {
     "freeQty": 5,
@@ -3453,6 +3453,17 @@
     "split": 100,
     "productPrice": 0.0457
   },
+  "4D03WGJ0102T5E": {
+    "freeQty": 5,
+    "minTotal": 2.93,
+    "category": "排阻",
+    "brand": "UNI-ROYAL(厚声)",
+    "encapsulation": "0603x4",
+    "productCode": "C20197",
+    "needNumber": 50,
+    "split": 50,
+    "productPrice": 0.0651
+  },
   "4D03WGJ0472T5E": {
     "freeQty": 5,
     "minTotal": 3.9,
@@ -3463,28 +3474,6 @@
     "needNumber": 100,
     "split": 100,
     "productPrice": 0.040986
-  },
-  "4D03WGJ0102T5E": {
-    "freeQty": 5,
-    "minTotal": 3.44,
-    "category": "排阻",
-    "brand": "UNI-ROYAL(厚声)",
-    "encapsulation": "0603x4",
-    "productCode": "C20197",
-    "needNumber": 50,
-    "split": 50,
-    "productPrice": 0.0764
-  },
-  "LM358DR2G": {
-    "freeQty": 2,
-    "minTotal": 2.65,
-    "category": "运算放大器",
-    "brand": "onsemi(安森美)",
-    "encapsulation": "SOIC-8",
-    "productCode": "C7950",
-    "needNumber": 10,
-    "split": 10,
-    "productPrice": 0.3308
   },
   "NE5532DR": {
     "freeQty": 2,
@@ -3508,27 +3497,38 @@
     "split": 5,
     "productPrice": 0.9174
   },
+  "LM358DR2G": {
+    "freeQty": 2,
+    "minTotal": 2.65,
+    "category": "运算放大器",
+    "brand": "onsemi(安森美)",
+    "encapsulation": "SOIC-8",
+    "productCode": "C7950",
+    "needNumber": 10,
+    "split": 10,
+    "productPrice": 0.3308
+  },
   "GZ2012D101TF": {
     "freeQty": 5,
-    "minTotal": 2.35,
+    "minTotal": 2.36,
     "category": "磁珠",
     "brand": "Sunlord(顺络)",
     "encapsulation": "0805",
     "productCode": "C1015",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.1564
+    "productPrice": 0.1569
   },
   "GZ1608D601TF": {
     "freeQty": 5,
-    "minTotal": 1.06,
+    "minTotal": 1.05,
     "category": "磁珠",
     "brand": "Sunlord(顺络)",
     "encapsulation": "0603",
     "productCode": "C1002",
     "needNumber": 20,
     "split": 20,
-    "productPrice": 0.0704
+    "productPrice": 0.0698
   },
   "GZ2012D601TF": {
     "freeQty": 5,
@@ -3550,7 +3550,7 @@
     "productCode": "C7171",
     "needNumber": 2,
     "split": 2,
-    "productPrice": 1.161
+    "productPrice": 1.2099
   },
   "TAJB107K006RNJ": {
     "freeQty": 2,
@@ -3561,7 +3561,7 @@
     "productCode": "C16133",
     "needNumber": 2,
     "split": 2,
-    "productPrice": 1.6219
+    "productPrice": 1.6858
   },
   "SDFL1608S100KTF": {
     "freeQty": 5,
@@ -3598,14 +3598,14 @@
   },
   "SM4007PL": {
     "freeQty": 10,
-    "minTotal": 4.46,
+    "minTotal": 4.41,
     "category": "通用二极管",
     "brand": "MDD(辰达半导体)",
     "encapsulation": "SOD-123FL",
     "productCode": "C64898",
     "needNumber": 100,
     "split": 100,
-    "productPrice": 0.04947
+    "productPrice": 0.04896
   },
   "TPS5430DDAR": {
     "freeQty": 5,
@@ -3616,7 +3616,7 @@
     "productCode": "C9864",
     "needNumber": 1,
     "split": 1,
-    "productPrice": 3.78
+    "productPrice": 3.83
   },
   "XL1509-5.0E1": {
     "freeQty": 5,
@@ -3627,7 +3627,7 @@
     "productCode": "C61063",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 1.5035
+    "productPrice": 1.5073
   },
   "PSM712-LF-T7": {
     "freeQty": 5,
@@ -3651,17 +3651,6 @@
     "split": 10,
     "productPrice": 0.3423
   },
-  "SP3485EN-L/TR": {
-    "freeQty": 2,
-    "minTotal": 0.0,
-    "category": "RS-485/RS-422芯片",
-    "brand": "MaxLinear(迈凌)",
-    "encapsulation": "SOIC-8",
-    "productCode": "C8963",
-    "needNumber": 2,
-    "split": 2,
-    "productPrice": 1.6133
-  },
   "SP485EEN-L/TR": {
     "freeQty": 2,
     "minTotal": 5.14,
@@ -3673,16 +3662,27 @@
     "split": 5,
     "productPrice": 1.7118
   },
+  "SP3485EN-L/TR": {
+    "freeQty": 2,
+    "minTotal": 0.0,
+    "category": "RS-485/RS-422芯片",
+    "brand": "MaxLinear(迈凌)",
+    "encapsulation": "SOIC-8",
+    "productCode": "C8963",
+    "needNumber": 2,
+    "split": 2,
+    "productPrice": 1.6133
+  },
   "74HC595D,118": {
     "freeQty": 2,
-    "minTotal": 2.03,
+    "minTotal": 1.96,
     "category": "移位寄存器",
     "brand": "Nexperia(安世)",
     "encapsulation": "SOIC-16",
     "productCode": "C5947",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.6761
+    "productPrice": 0.6519
   },
   "ULN2003ADR": {
     "freeQty": 5,
@@ -3693,29 +3693,29 @@
     "productCode": "C7512",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.9086
+    "productPrice": 0.9045
   },
   "74HC14D,653": {
     "freeQty": 2,
-    "minTotal": 1.42,
+    "minTotal": 1.45,
     "category": "反相器",
     "brand": "Nexperia(安世)",
     "encapsulation": "SOIC-14",
     "productCode": "C5605",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.4731
+    "productPrice": 0.4812
   },
   "US1M": {
     "freeQty": 2,
-    "minTotal": 3.78,
+    "minTotal": 3.74,
     "category": "快恢复/高效率二极管",
     "brand": "MDD(辰达半导体)",
     "encapsulation": "SMA",
     "productCode": "C412437",
     "needNumber": 50,
     "split": 50,
-    "productPrice": 0.078861
+    "productPrice": 0.078048
   },
   "MB10S-50MIL": {
     "freeQty": 5,
@@ -3741,14 +3741,14 @@
   },
   "CJ431": {
     "freeQty": 1,
-    "minTotal": 2.19,
+    "minTotal": 2.12,
     "category": "电压基准芯片",
     "brand": "CJ(江苏长电/长晶)",
     "encapsulation": "SOT-23",
     "productCode": "C3113",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.2426
+    "productPrice": 0.2347
   },
   "W25Q128JVSIQ": {
     "freeQty": 2,
@@ -3763,14 +3763,14 @@
   },
   "LM393DR2G": {
     "freeQty": 2,
-    "minTotal": 3.24,
+    "minTotal": 2.93,
     "category": "比较器",
     "brand": "onsemi(安森美)",
     "encapsulation": "SOIC-8",
     "productCode": "C7955",
     "needNumber": 10,
     "split": 10,
-    "productPrice": 0.4047
+    "productPrice": 0.3664
   },
   "SP3232EEY-L/TR": {
     "freeQty": 2,
@@ -3785,14 +3785,14 @@
   },
   "OP07CDR": {
     "freeQty": 1,
-    "minTotal": 2.9,
+    "minTotal": 2.88,
     "category": "精密运放",
     "brand": "TI(德州仪器)",
     "encapsulation": "SOIC-8",
     "productCode": "C7433",
     "needNumber": 5,
     "split": 5,
-    "productPrice": 0.7263
+    "productPrice": 0.7198
   },
   "TL072CDT": {
     "freeQty": 5,
